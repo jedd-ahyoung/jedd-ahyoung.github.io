@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data type="weapon">
+	<name>Stinger</name>
+	<rate>4</rate>
+	<speed>20</speed>
+	<power>5</power>
+</data>

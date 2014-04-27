@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data type="actor">
+	<name>Jake Diomedes</name>
+	<ImageLoader name="player1display" url="ship.png" load="true" />
+	<xpos>40</xpos>
+	<ypos>40</ypos>
+	<blob>
+		<layer>1</layer>
+		<width>80</width>
+		<height>40</height>
+		<x_rectpos>0</x_rectpos>
+		<y_rectpos>0</y_rectpos>
+	</blob>
+	<hp></hp>
+	<speed>5</speed>
+	<weapon>Stinger</weapon>
+	<shield>false</shield>
+</data>

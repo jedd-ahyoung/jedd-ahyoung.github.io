@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utl-8" ?>
+<data>
+<LoaderMax name="thumbnails" prependURLs="http://www.jedd-ahyoung.com/portfolio/images/" childrenVars="width:150, height:150" load="true">
+	<ImageLoader name="thumb1" url="makelovenotwar.jpg" />
+	<ImageLoader name="thumb2" url="dococolor.thumb.jpg" />
+	<ImageLoader name="thumb3" url="quackie1.thumb.png" />
+	<ImageLoader name="thumb4" url="quackie2.thumb.png" />
+	<ImageLoader name="thumb5" url="knightindustriesfinal.thumb.png" />
+	<ImageLoader name="thumb6" url="krlogoorig.jpg" x="200"/>
+</LoaderMax>
+</data>

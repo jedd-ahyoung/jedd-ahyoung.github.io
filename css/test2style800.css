@@ -1,0 +1,106 @@
+body
+{
+	background: #dddddd;
+	padding: 0;
+	margin: 0;
+}
+
+/* For testing only - wireframing.
+div
+{
+	border: 1px solid red !important;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+/* For dumbass IE. Damn you, M$. */
+div#content
+{
+	position: relative;
+	right: 50%;
+	text-align: center;
+}
+
+div#wrapper
+{
+	width: 790px;
+	margin: auto;
+
+	position: relative;
+	left: 50%;
+}
+
+div#header
+{
+	height: 175px;
+}
+
+div#nav
+{
+}
+
+div#nav ul
+{
+	background: #bbbbbb;
+	width: 100%;
+	margin: 0;
+	padding: .5em 0;
+}
+
+div#nav ul li
+{
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#nav ul li a
+{
+	margin: 0;
+	padding: .5em 2em;
+	text-align: center;
+	vertical-align: middle;
+
+	color: black;
+	background: #bbbbbb;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+div#nav ul li a:hover
+{
+	background: #999999;
+	color: white;
+}
+
+div#body
+{
+	background: white;
+	overflow: auto;
+}
+
+div#main
+{
+	background: white;
+	width: 70%;
+	float: left;
+}
+
+div#sidebar
+{
+	background: #9999bb;
+	float: right;
+	width: 30%;
+	min-height: 30em;
+}
+
+div#footer
+{
+	background: #bbbbbb;
+	height: 140px;
+	clear:both;
+}

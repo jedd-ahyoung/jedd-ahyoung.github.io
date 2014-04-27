@@ -1,0 +1,195 @@
+body
+{
+	/* background: #d4cfa9; */
+	background: #bcb47a;
+	background-image: url("../images/bg_bodygradient.png");
+	background-repeat: repeat-x;
+	padding: 0;
+	margin: 0;
+}
+
+/* For testing only - wireframing.
+div
+{
+	border: 1px solid red !important;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+/* For dumbass IE. Damn you, M$. */
+div#content
+{
+	position: relative;
+	right: 50%;
+	text-align: center;
+}
+
+div#wrapper
+{
+	width: 990px;
+	margin: auto;
+
+	position: relative;
+	left: 50%;
+}
+
+div#header
+{
+	height: 175px;
+	/* background: url('../images/header-bg.png'); */
+}
+
+div#nav
+{
+}
+
+div#nav ul
+{
+	background: black;
+	width: 100%;
+	margin: 0;
+	padding: .5em 0;
+}
+
+div#nav ul li
+{
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#nav ul li a
+{
+	margin: 0;
+	padding: .5em 2em;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+
+	color: white;
+	background: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+div#nav ul li a:hover
+{
+	border-bottom: .2em solid #d50202;
+	padding-bottom: .3em;
+}
+
+div#body
+{
+	background: white;
+	min-height: 500px;
+	width: 990px;
+	overflow: auto;
+}
+
+div#main
+{
+	background: white;
+	float: left;
+	padding: 1em;
+	text-align: left;
+	font-family: georgia, sans-serif;
+}
+
+div#main h3
+{
+	font-family: sans-serif;
+	font-variant: small-caps;
+	border-bottom: 3px solid red;
+}
+
+div#main h4
+{
+	font-family: serif;
+}
+
+div#main a
+{
+	text-decoration: none;
+}
+
+div#main a:hover
+{
+	text-decoration: underline;
+	color: red;
+}
+
+div#main a:visited
+{
+	color: #336633;
+}
+
+div#main dt
+{
+	font-style: italic;
+	padding: .5em 0 .5em 0;
+}
+
+div#main dd.explain
+{
+	margin: 0;
+	padding-bottom: .5em;
+}
+
+div#sidebar
+{
+	background: #9999bb;
+	float: right;
+	width: 30%;
+	min-height: 30em;
+}
+
+div#footer
+{
+	background-image: url("../images/footer_bg.png");
+	background-repeat: no-repeat;
+	padding-top: 2em;
+	color: black;
+	font-family: georgia, serif;
+	height: 140px;
+	clear:both;
+}
+
+div.codewrapper
+{
+	background: white;
+	padding: 1em;
+}
+
+div.codewrapper pre
+{
+	
+}
+
+div.caption
+{
+	display: block;
+	margin: 0 0 0 .5em;
+	padding: .5em .5em .5em .5em;
+	height: 9em;
+	width: 45%;
+
+	font-size: 2.5em;
+	font-family: serif;
+	font-style: italic;
+	color: #339966;
+	/* background: #e9e9d9; */
+	background-image: url("../images/captionbg.png");
+	background-repeat: no-repeat;
+	background-position: 50% .5em;;
+	float: right;
+}
+
+iframe.googleframe
+{
+	border: 0;
+	line-height: 1em;
+}
