@@ -23,6 +23,57 @@ $width: 960;
 
 // Column classes.
 
+// Magic parallax mixins. http://codepen.io/scottkellum/pen/bHEcA
+
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default;
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    @include perspective($perspective * 1px);
+    @include transform-style(preserve-3d);
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      @include transform-style(preserve-3d);
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  @include transform(
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  );
+  z-index: $distance * 1000;
+}
+
+// End of magic parallax mixins
+
+@include parallax-init;
+
+
 .on-2
 {
 	width: px($width / 2);
@@ -331,6 +382,11 @@ body
 	overflow: hidden;
 }
 
+.height-480
+{
+	height: 480px;
+}
+
 .height-360
 {
 	height: 360px;
@@ -346,19 +402,45 @@ body
 	height: 240px;
 }
 
-.resume-page img
-{
-	@include simple-transform(1, 5deg);
-	border: 1px solid #999;
-	position: relative;
-	top: -65px;
-	left: -15px;
-	display: block;
-	margin: 40px auto;
+.resume-page {
+	margin-top: -40px;
+	height: 400px;
 
-	@include single-transition(.2s all);
+	a {
+		@include simple-transform(1, 5deg);
+		position: relative;
+		top: -8px;
+		left: -15px;
+		display: inline-block;
+		margin: 40px 40px;
 
-	&:hover {
-		@include simple-transform(1.05, 5deg);
+		@include single-transition(.2s all);
+
+		&:hover {
+			@include simple-transform(1.05, 5deg);
+		}
+
+		&:after {
+			@include single-transition(.2s all);
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: none;
+			border: 2px solid #ebebeb;
+		}
+
+		&:hover:after {
+			background: rgba(255, 255, 192, 0.8);
+		}
+	}
+
+	img
+	{
+		border: 2px solid #ebebeb;
 	}
 }
+
