@@ -1,0 +1,421 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+
+white: FFFFFF;
+happy up here: A1C1BE;
+stomp: 59554E;
+remind me: F3F4E5;
+clean sweep: E2E3D9;
+
+*/
+/* line 17, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/screen.scss */
+body {
+  background: #e2e3d9 url("../images/landingbg.png") fixed;
+  padding: 0;
+  margin: 0;
+}
+
+/* For testing only - wireframing.
+div
+{
+	border: 1px solid red !important;
+	margin: 0;
+	padding: 0;
+}
+*/
+/* For dumbass IE. Damn you, M$. */
+/* line 39, ../sass/screen.scss */
+div#content {
+  position: relative;
+}
+
+/* line 43, ../sass/screen.scss */
+#content {
+  background: rgba(118, 142, 140, 0.8);
+}
+
+/* line 48, ../sass/screen.scss */
+div#landing {
+  background: rgba(161, 193, 190, 0.5);
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 56, ../sass/screen.scss */
+.video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  opacity: 0.1;
+}
+
+/* line 66, ../sass/screen.scss */
+.video embed {
+  width: 100%;
+}
+
+/* line 71, ../sass/screen.scss */
+div#landing #header {
+  position: absolute;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: 15%;
+}
+
+/* line 79, ../sass/screen.scss */
+div.wrapper {
+  width: 960px;
+  margin: auto;
+  position: relative;
+}
+
+/* line 87, ../sass/screen.scss */
+#header {
+  display: block;
+  font-size: 2em;
+  font-family: 'Raleway', 'sans-serif';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  padding-top: 40px;
+}
+
+/* line 98, ../sass/screen.scss */
+#header h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* line 105, ../sass/screen.scss */
+#header h1 .jedd {
+  font-weight: 500;
+  color: black;
+}
+
+/* line 112, ../sass/screen.scss */
+#header h1 .ahyoung {
+  font-weight: 300;
+  color: white;
+}
+
+/* line 118, ../sass/screen.scss */
+#header p {
+  margin: 1em;
+  line-height: 1.1em;
+}
+
+/* line 125, ../sass/screen.scss */
+div#nav {
+  background: white;
+  height: 30px;
+  margin: 0 0 -15px 0;
+  position: relative;
+  top: -15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* line 136, ../sass/screen.scss */
+div#nav ul {
+  background: black;
+  width: 100%;
+  margin: 0;
+  padding: .5em 0;
+}
+
+/* line 144, ../sass/screen.scss */
+div#nav ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 152, ../sass/screen.scss */
+div#nav ul li a {
+  margin: 0;
+  padding: .5em 2em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+/* line 166, ../sass/screen.scss */
+div#nav ul li a:hover {
+  border-bottom: .2em solid white;
+  padding-bottom: .3em;
+}
+
+/* line 172, ../sass/screen.scss */
+div#body {
+  min-height: 500px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* line 179, ../sass/screen.scss */
+.chapter {
+  text-align: left;
+  font-family: 'Muli', 'sans-serif';
+  font-weight: 300;
+  line-height: 1.4em;
+  clear: both;
+}
+
+/* line 188, ../sass/screen.scss */
+div#main h3 {
+  font-family: sans-serif;
+  font-variant: small-caps;
+  border-bottom: 3px solid red;
+}
+
+/* line 195, ../sass/screen.scss */
+div#main h4 {
+  font-family: serif;
+}
+
+/* line 200, ../sass/screen.scss */
+div#main a {
+  text-decoration: none;
+}
+
+/* line 205, ../sass/screen.scss */
+div#main a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* line 211, ../sass/screen.scss */
+div#main a:visited {
+  color: #336633;
+}
+
+/* line 216, ../sass/screen.scss */
+div#main dt {
+  font-style: italic;
+  padding: .5em 0 .5em 0;
+}
+
+/* line 222, ../sass/screen.scss */
+div#main dd.explain {
+  margin: 0;
+  padding-bottom: .5em;
+}
+
+/* line 228, ../sass/screen.scss */
+#resume {
+  background: #ebebeb;
+}
+
+/* line 233, ../sass/screen.scss */
+div#sidebar {
+  background: #9999bb;
+  float: right;
+  width: 30%;
+  min-height: 30em;
+}
+
+/* line 241, ../sass/screen.scss */
+div#footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 2em;
+  color: white;
+  clear: both;
+  font-family: sans-serif;
+}
+
+/* line 250, ../sass/screen.scss */
+div.codewrapper {
+  background: white;
+  padding: 1em;
+}
+
+/* line 261, ../sass/screen.scss */
+#about {
+  background: white;
+  border: 0;
+}
+
+/* line 267, ../sass/screen.scss */
+.column {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+/* line 274, ../sass/screen.scss */
+.column p {
+  margin: 1em;
+}
+
+/* line 279, ../sass/screen.scss */
+.on-2 {
+  width: 480px;
+}
+
+/* line 284, ../sass/screen.scss */
+.on-3 {
+  width: 320px;
+}
+
+/* line 289, ../sass/screen.scss */
+.on-4 {
+  width: 240px;
+}
+
+/* line 294, ../sass/screen.scss */
+.caption {
+  padding: .5em .5em .5em .5em;
+  height: 9em;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-family: 'Rock Salt', serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* line 307, ../sass/screen.scss */
+.caption span {
+  display: block;
+  position: relative;
+  top: .5em;
+  left: .2em;
+  -webkit-transform: rotate(-5deg);
+}
+
+/* line 316, ../sass/screen.scss */
+.footer a {
+  font-size: 3em;
+  color: #E2E3D9;
+  text-decoration: none;
+  transition: all 2s linear;
+}
+
+/* line 324, ../sass/screen.scss */
+.footer a:hover {
+  color: #F3F4E5;
+}
+
+/* line 329, ../sass/screen.scss */
+.footer a:hover:before {
+  color: #F3F4E5;
+}
+
+/* line 334, ../sass/screen.scss */
+.overflow-container {
+  overflow: hidden;
+}
+
+/* line 339, ../sass/screen.scss */
+.height-360 {
+  height: 360px;
+}
+
+/* line 344, ../sass/screen.scss */
+.height-320 {
+  height: 320px;
+}
+
+/* line 349, ../sass/screen.scss */
+.height-240 {
+  height: 240px;
+}
+
+/* line 354, ../sass/screen.scss */
+.resume-page img {
+  -webkit-transform: rotate(5deg);
+  border: 1px solid #999;
+  position: relative;
+  top: -65px;
+  left: -15px;
+  display: block;
+  margin: 40px auto;
+  transition: .2s all ease-in-out;
+}
+
+/* line 366, ../sass/screen.scss */
+.resume-page img:hover {
+  -webkit-transform: rotate(5deg) scale(1.05);
+}
