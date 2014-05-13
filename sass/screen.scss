@@ -4,11 +4,39 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3/transform";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+// Variables.
 
 $happyuphere: #A1C1BE;
 $stomp: #59554E;
 $remindme: #F3F4E5;
 $cleansweep: #E2E3D9;
+
+$width: 960;
+
+@function px($value) {
+	@return $value * 1px;
+}
+
+// Column classes.
+
+.on-2
+{
+	width: px($width / 2);
+}
+
+.on-3
+{
+	width: px($width / 3);
+}
+
+.on-4
+{
+	width: px($width / 4);
+}
 
 * {
 	box-sizing: border-box;
@@ -28,7 +56,7 @@ body
 }
 
 #content {
-	background: rgba(118, 142, 140, 0.8);	
+	background: rgba(118, 142, 140, 0.8);
 }
 
 #landing
@@ -84,7 +112,7 @@ body
 	position: absolute;
 	top: 0;
 	width: 100%;
-	min-width: 960px;
+	min-width: px($width);
 	height: auto;
 	opacity: 0.1;
 
@@ -97,7 +125,7 @@ body
 
 .wrapper
 {
-	width: 960px;
+	width: px($width);
 	margin: auto;
 	position: relative;
 }
@@ -109,8 +137,7 @@ body
 	margin: 0 0 -15px 0;
 	position: relative;
 	top: -15px;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
+	@include border-top-radius(30px);
 
 	ul
 	{
@@ -118,7 +145,7 @@ body
 		width: 100%;
 		margin: 0;
 		padding: .5em 0;
-	
+
 		li
 		{
 			display: inline;
@@ -254,20 +281,7 @@ body
 	}
 }
 
-.on-2
-{
-	width: 480px;
-}
 
-.on-3
-{
-	width: 320px;
-}
-
-.on-4
-{
-	width: 240px;
-}
 
 .caption
 {
@@ -287,28 +301,28 @@ body
 		position: relative;
 		top: .5em;
 		left: .2em;
-		-webkit-transform: rotate(-5deg);
+		@include simple-transform(1, -5deg);
 	}
 }
 
-.footer {
-
-}
-a
+.footer 
 {
-	font-size: 3em;
-	color: #E2E3D9;
-	text-decoration: none;
-	transition: all 2s linear;
-
-	&:hover
+	a
 	{
-		color: #F3F4E5;
-	}
+		font-size: 3em;
+		color: #E2E3D9;
+		text-decoration: none;
+		@include single-transition(.2s all);
 
-	&:hover:before
-	{
-		color: #F3F4E5;
+		&:hover
+		{
+			color: #F3F4E5;
+		}
+
+		&:hover:before
+		{
+			color: #F3F4E5;
+		}
 	}
 }
 
@@ -334,7 +348,7 @@ a
 
 .resume-page img
 {
-	-webkit-transform: rotate(5deg);
+	@include simple-transform(1, 5deg);
 	border: 1px solid #999;
 	position: relative;
 	top: -65px;
@@ -342,9 +356,9 @@ a
 	display: block;
 	margin: 40px auto;
 
-	transition: .2s all ease-in-out;
+	@include single-transition(.2s all);
 
 	&:hover {
-		-webkit-transform: rotate(5deg) scale(1.05);
+		@include simple-transform(1.05, 5deg);
 	}
 }
