@@ -54,20 +54,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/screen.css" />
 	<link rel="stylesheet" type="text/css" href="css/prettify.css"/>
-	<link rel="stylesheet" href="http://i.icomoon.io/public/temp/058f31e5c9/UntitledProject2/style.css">
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
 
 	<title>Jedd Ahyoung</title>
 
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Person">
 	<!-- http://www.pond5.com/stock-footage/12136361/topview-laptop-dolly-13.html#1 -->
 	<div id="landing">
 		<!-- video class="video" src="images/header.mp4" autoplay="autoplay" loop="loop">
 		</video -->
 		<div class="wrapper">
 			<header id="header">
-				<h1><span class="jedd">Jedd</span><span class="ahyoung">Ahyoung</span></h1>
-				<p>Building applications <br /> so you don't have to.</p>
+				<h1><span itemprop="givenName" class="jedd">Jedd</span><span itemprop="familyName" class="ahyoung">Ahyoung</span></h1>
+				<p>A <span itemprop="jobTitle">software developer</span><br /> making cool stuff.</p>
 			</header>
 		</div>
 	</div>
@@ -77,14 +77,14 @@
 				&nbsp;
 			</div>
 			<div id="body">
-				<section class="chapter" id="about">
+				<section class="chapter" id="about" itemprop="description">
 					<div class="column on-2">
 						<p>Coming from a musical family, inspiration has always been around me. I grew up around music and culture, and I developed an early love for art (by sitting in front of the TV, drawing my favorite cartoon characters).</p>
 						<p>My first computer opened a new world to me - after I broke it numerous times, I learned to exercise my creativity with new digital mediums. Armed with Notepad, Paint Shop Pro, and Internet Explorer 4, I began designing for the web. Eventually, I learned the ins and outs of computing, and pursued a career in it.</p>
 						<p>Today, I'm an autonomous individual who loves thinking about the possibilities that new technologies enable. Spending four years in an IT career has allowed me to broaden my horizons, cultivate new ideas, and discover new ways to implement them.</p>
 					</div><div class="column on-2 height-480">
 						<!-- img src="http://placehold.it/480/ffffff" / -->
-						<img src="images/moneyshot.jpg" />
+						<img itemprop="image" src="images/moneyshot.jpg" />
 					</div>
 				</section>
 				<section class="chapter" id="resume">
@@ -100,24 +100,19 @@
 				</section>
 			</div>
 		</div>
-		<div id="footer">
+		<footer id="footer">
 			<div class="wrapper">
-				<div class="column on-3 height-320">
-				</div><div class="column on-3 height-320">
-					Hit me up!
-				</div><div class="column on-3 height-320">
-					<section itemscope itemtype="http://schema.org/Person" class="footer">
-						<span itemprop="name">Jedd Ahyoung<span>
-						<a class="icon-mail" itemprop="email" href="mailto:jedd.ahyoung@gmail.com" title="Send me email"></a>
-						<a class="icon-stackoverflow" itemprop="url" href="http://stackoverflow.com/users/677526/lunchmeat317" title="View my StackOverflow contributions"></a>
-						<a class="icon-linkedin" itemprop="url" href="http://www.linkedin.com/in/jeddahyoung" title="Find me on LinkedIn"></a>
-						<a class="icon-github" itemprop="url" href="https://github.com/jedd-ahyoung" title="Find me on Github"></a>
-					</section>
-
-					This site and all images are copyright &copy; Jedd Ahyoung, 2012.
+				<div class="column on-3 height-160">
+				</div><div class="column on-3 height-160">
+					<a class="icon icon-mail" itemprop="email" href="mailto:jedd.ahyoung@gmail.com" title="Send me email"></a>
+					<a class="icon icon-stackoverflow" itemprop="url" href="http://stackoverflow.com/users/677526/lunchmeat317" title="View my StackOverflow contributions"></a>
+					<a class="icon icon-linkedin" itemprop="url" href="http://www.linkedin.com/in/jeddahyoung" title="Find me on LinkedIn"></a>
+					<a class="icon icon-github" itemprop="url" href="https://github.com/jedd-ahyoung" title="Find me on Github"></a>
+					<p>This site and all images are copyright &copy; Jedd Ahyoung, 2012.</p>
+				</div><div class="column on-3 height-160">
 				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>

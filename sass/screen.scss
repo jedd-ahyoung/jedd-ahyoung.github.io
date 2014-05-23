@@ -306,6 +306,8 @@ body
 	color: white;
 	clear:both;
 	font-family: sans-serif;
+	text-align: center;
+	// @include parallax(.2);
 }
 
 .codewrapper
@@ -332,8 +334,6 @@ body
 	}
 }
 
-
-
 .caption
 {
 	padding: .5em .5em .5em .5em;
@@ -356,24 +356,29 @@ body
 	}
 }
 
-.footer 
+
+a.icon
 {
-	a
+	display: inline-block;
+	font-size: 50px;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	padding: 2px;
+
+	&:before
 	{
-		font-size: 3em;
-		color: #E2E3D9;
-		text-decoration: none;
-		@include single-transition(.2s all);
+		@include single-transition(all, 1s);
+	}
 
-		&:hover
-		{
-			color: #F3F4E5;
-		}
+	&:hover
+	{
+		color: rgba(255, 255, 255, 1);
+	}
 
-		&:hover:before
-		{
-			color: #F3F4E5;
-		}
+	&:hover:before
+	{
+		@include single-transition(all, .5s);
+		color: rgba(255, 255, 255, 1);
 	}
 }
 
@@ -400,6 +405,11 @@ body
 .height-240
 {
 	height: 240px;
+}
+
+.height-160
+{
+	height: 160px;
 }
 
 .resume-page {
@@ -434,7 +444,8 @@ body
 		}
 
 		&:hover:after {
-			background: rgba(255, 255, 192, 0.8);
+			background: rgba(255, 255, 255, 0.8);
+			border: 2px solid red;
 		}
 	}
 
