@@ -424,13 +424,15 @@ a.icon
 			left: 0;
 			bottom: 0;
 			right: 0;
-			background: none;
+			background: url("../images/pdf.png") no-repeat 40% 20%;
 			border: 2px solid #ebebeb;
+			opacity: 0;
 		}
 
 		&:hover:after {
-			background: rgba(255, 255, 255, 0.8);
-			border: 2px solid red;
+			background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
+			border: 2px solid #d00;
+			opacity: 1;
 		}
 	}
 
