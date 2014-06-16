@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 55, ../sass/mobile.scss */
   body {
-    background: #666666;
+    background: #666666 url("../images/mobilebg.jpg");
     padding: 0;
     margin: 0;
   }
