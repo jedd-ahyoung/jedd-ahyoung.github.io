@@ -163,14 +163,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 100%;
   }
 
-  /* line 137, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   .wrapper {
     margin: auto;
     width: 960px;
     position: relative;
   }
 
-  /* line 144, ../sass/screen.scss */
+  /* line 143, ../sass/screen.scss */
   #nav {
     background: white;
     height: 30px;
@@ -184,21 +184,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-border-top-right-radius: 30px;
     border-top-right-radius: 30px;
   }
-  /* line 153, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   #nav ul {
     background: black;
     width: 100%;
     margin: 0;
     padding: .5em 0;
   }
-  /* line 160, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   #nav ul li {
     display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  /* line 167, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   #nav ul li a {
     margin: 0;
     padding: .5em 2em;
@@ -210,20 +210,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: sans-serif;
     font-size: 1em;
   }
-  /* line 180, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   #nav ul li a:hover {
     border-bottom: .2em solid white;
     padding-bottom: .3em;
   }
 
-  /* line 191, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   #body {
     min-height: 500px;
     width: 100%;
     overflow: auto;
   }
 
-  /* line 198, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .chapter {
     text-align: left;
     font-family: 'Muli', 'sans-serif';
@@ -232,52 +232,137 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
   }
 
-  /* line 208, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   #main h3 {
     font-family: sans-serif;
     font-variant: small-caps;
     border-bottom: 3px solid red;
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   #main h4 {
     font-family: serif;
   }
-  /* line 220, ../sass/screen.scss */
+  /* line 219, ../sass/screen.scss */
   #main a {
     text-decoration: none;
   }
-  /* line 224, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   #main a:hover {
     text-decoration: underline;
     color: red;
   }
-  /* line 230, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   #main a:visited {
     color: #336633;
   }
-  /* line 236, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #main dt {
     font-style: italic;
     padding: .5em 0 .5em 0;
   }
-  /* line 242, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   #main dd.explain {
     margin: 0;
     padding-bottom: .5em;
   }
 
-  /* line 249, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   #resume {
     background: #ebebeb;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  /* line 255, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   #contact {
-    background: #bbbbbb;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-top: 10px solid #a1c1be;
+  }
+  /* line 259, ../sass/screen.scss */
+  #contact .contact-form {
+    width: 100%;
+  }
+  /* line 262, ../sass/screen.scss */
+  #contact .contact-form label {
+    display: block;
+    margin: 0 1em;
+    padding: .5em 5px;
+    background: #000;
+  }
+  /* line 268, ../sass/screen.scss */
+  #contact .contact-form label span {
+    font-family: 'Raleway', 'sans-serif';
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px dotted white;
+  }
+  /* line 276, ../sass/screen.scss */
+  #contact .contact-form input[type="text"], #contact .contact-form input[type="email"] {
+    background: transparent;
+    color: white;
+    border: 0;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+  }
+  /* line 285, ../sass/screen.scss */
+  #contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  /* line 290, ../sass/screen.scss */
+  #contact .contact-form textarea {
+    background: transparent;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    font-size: 1em;
+    border: 0;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+  }
+  /* line 299, ../sass/screen.scss */
+  #contact .contact-form textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  /* line 304, ../sass/screen.scss */
+  #contact .contact-form .form-submit {
+    margin: 0 1em;
+  }
+  /* line 307, ../sass/screen.scss */
+  #contact .contact-form .form-submit button {
+    margin: 0;
+    border: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: black;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+  }
+  /* line 321, ../sass/screen.scss */
+  #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
+    background: rgba(192, 192, 192, 0.1);
   }
 
-  /* line 259, ../sass/screen.scss */
+  /* line 329, ../sass/screen.scss */
   .lastchapter {
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
@@ -287,7 +372,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-bottom-right-radius: 30px;
   }
 
-  /* line 264, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   #sidebar {
     background: #9999bb;
     float: right;
@@ -295,7 +380,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     min-height: 30em;
   }
 
-  /* line 272, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   #footer {
     padding-top: 2em;
     color: white;
@@ -304,30 +389,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
   }
 
-  /* line 282, ../sass/screen.scss */
+  /* line 352, ../sass/screen.scss */
   .codewrapper {
     background: white;
     padding: 1em;
   }
 
-  /* line 288, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   #about {
     background: white;
     border: 0;
   }
 
-  /* line 298, ../sass/screen.scss */
+  /* line 368, ../sass/screen.scss */
   .column {
     display: inline-block;
     vertical-align: top;
     margin: 0;
   }
-  /* line 304, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .column p {
     margin: 1em;
   }
 
-  /* line 310, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   .caption {
     padding: .5em .5em .5em .5em;
     height: 9em;
@@ -338,7 +423,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
-  /* line 322, ../sass/screen.scss */
+  /* line 392, ../sass/screen.scss */
   .caption span {
     display: block;
     position: relative;
@@ -351,7 +436,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform:  scale(1, 1) rotateZ(-5deg);
   }
 
-  /* line 333, ../sass/screen.scss */
+  /* line 403, ../sass/screen.scss */
   a.icon {
     display: inline-block;
     font-size: 50px;
@@ -359,18 +444,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
     padding: 2px;
   }
-  /* line 341, ../sass/screen.scss */
+  /* line 411, ../sass/screen.scss */
   a.icon:before {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 346, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   a.icon:hover {
     color: white;
   }
-  /* line 351, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   a.icon:hover:before {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -379,42 +464,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
   }
 
-  /* line 358, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   .overflow-container {
     overflow: hidden;
   }
 
-  /* line 363, ../sass/screen.scss */
+  /* line 433, ../sass/screen.scss */
   .height-480 {
     height: 480px;
   }
 
-  /* line 368, ../sass/screen.scss */
+  /* line 438, ../sass/screen.scss */
   .height-360 {
     height: 360px;
   }
 
-  /* line 373, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   .height-320 {
     height: 320px;
   }
 
-  /* line 378, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .height-240 {
     height: 240px;
   }
 
-  /* line 383, ../sass/screen.scss */
+  /* line 453, ../sass/screen.scss */
   .height-160 {
     height: 160px;
   }
 
-  /* line 387, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   .resume-page {
     margin-top: -40px;
     height: 400px;
   }
-  /* line 391, ../sass/screen.scss */
+  /* line 461, ../sass/screen.scss */
   .resume-page a {
     -webkit-transform:  scale(1, 1) rotateZ(5deg);
     -moz-transform:  scale(1, 1) rotateZ(5deg);
@@ -431,7 +516,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: 0.2s all, 1s;
     transition: 0.2s all, 1s;
   }
-  /* line 401, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   .resume-page a:hover {
     -webkit-transform:  scale(1.05, 1.05) rotateZ(5deg);
     -moz-transform:  scale(1.05, 1.05) rotateZ(5deg);
@@ -439,7 +524,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform:  scale(1.05, 1.05) rotateZ(5deg);
     transform:  scale(1.05, 1.05) rotateZ(5deg);
   }
-  /* line 405, ../sass/screen.scss */
+  /* line 475, ../sass/screen.scss */
   .resume-page a:after {
     -webkit-transition: 0.2s all, 1s;
     -moz-transition: 0.2s all, 1s;
@@ -456,13 +541,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 2px solid #ebebeb;
     opacity: 0;
   }
-  /* line 419, ../sass/screen.scss */
+  /* line 489, ../sass/screen.scss */
   .resume-page a:hover:after {
     background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
     border: 2px solid #d00;
     opacity: 1;
   }
-  /* line 427, ../sass/screen.scss */
+  /* line 497, ../sass/screen.scss */
   .resume-page img {
     border: 2px solid #ebebeb;
   }

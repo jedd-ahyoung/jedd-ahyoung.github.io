@@ -132,7 +132,6 @@ $phonewidth: 640;
 		}
 	}
 
-
 	.wrapper
 	{
 		margin: auto;
@@ -253,7 +252,78 @@ $phonewidth: 640;
 
 	#contact
 	{
-		background: #bbbbbb;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		border-top: 10px solid $happyuphere;
+
+		.contact-form {
+			width: 100%;
+
+			label {
+				display: block;
+				margin: 0 1em;
+				padding: .5em 5px;
+				background: #000;
+
+				span {
+					font-family: 'Raleway', 'sans-serif';
+					text-transform: uppercase;
+					display: block;
+					border-bottom: 1px dotted white;
+				}
+			}
+
+			input[type="text"], input[type="email"] {
+				background: transparent;
+				color: white;
+				border: 0;
+				padding: 5px;
+				font-size: 1em;
+				width: 100%;
+				@include single-transition(background, 1s);
+
+				&:focus {
+					background: rgba(255, 255, 255, 0.2);
+				}
+			}
+
+			textarea {
+				background: transparent;
+				color: white;
+				padding: 5px;
+				width: 100%;
+				font-size: 1em;
+				border: 0;
+				@include single-transition(background, 1s);
+
+				&:focus {
+					background: rgba(255, 255, 255, 0.2);
+				}
+			}
+
+			.form-submit {
+				margin: 0 1em;
+
+				button {
+					margin: 0;
+					border: 0;
+					font-size: 1em;
+					text-transform: uppercase;
+					padding: 1em;
+					display: block;
+					width: 100%;
+					@include border-bottom-radius(30px);
+					background: black;
+					color: white;
+					font-family: 'Raleway', 'sans-serif';
+					@include single-transition(background, 1s);
+
+					&:focus, &:hover {
+						background: rgba(192, 192, 192, 0.1);
+					}
+				}
+			}
+		}
 	}
 
 	.lastchapter {
