@@ -249,6 +249,14 @@ $phonewidth: 640;
 	{
 		background: #ebebeb;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	#contact
+	{
+		background: #bbbbbb;
+	}
+
+	.lastchapter {
 		@include border-bottom-radius(30px);
 	}
 
