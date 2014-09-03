@@ -319,6 +319,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
     padding: 5px;
     width: 100%;
+    max-width: 100%;
     font-size: 1em;
     border: 0;
     -webkit-transition: background 1s;
@@ -326,15 +327,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 299, ../sass/screen.scss */
+  /* line 300, ../sass/screen.scss */
   #contact .contact-form textarea:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 304, ../sass/screen.scss */
+  /* line 305, ../sass/screen.scss */
   #contact .contact-form .form-submit {
-    margin: 0 1em;
+    margin: 0 1em 3.5em;
   }
-  /* line 307, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   #contact .contact-form .form-submit button {
     margin: 0;
     border: 0;
@@ -357,12 +358,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 321, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
     background: rgba(192, 192, 192, 0.1);
   }
 
-  /* line 329, ../sass/screen.scss */
+  /* line 330, ../sass/screen.scss */
   .lastchapter {
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
@@ -372,7 +373,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-bottom-right-radius: 30px;
   }
 
-  /* line 334, ../sass/screen.scss */
+  /* line 335, ../sass/screen.scss */
   #sidebar {
     background: #9999bb;
     float: right;
@@ -380,7 +381,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     min-height: 30em;
   }
 
-  /* line 342, ../sass/screen.scss */
+  /* line 343, ../sass/screen.scss */
   #footer {
     padding-top: 2em;
     color: white;
@@ -389,30 +390,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
   }
 
-  /* line 352, ../sass/screen.scss */
+  /* line 353, ../sass/screen.scss */
   .codewrapper {
     background: white;
     padding: 1em;
   }
 
-  /* line 358, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   #about {
     background: white;
     border: 0;
   }
 
-  /* line 368, ../sass/screen.scss */
+  /* line 369, ../sass/screen.scss */
   .column {
     display: inline-block;
     vertical-align: top;
     margin: 0;
   }
-  /* line 374, ../sass/screen.scss */
+  /* line 375, ../sass/screen.scss */
   .column p {
     margin: 1em;
   }
 
-  /* line 380, ../sass/screen.scss */
+  /* line 381, ../sass/screen.scss */
   .caption {
     padding: .5em .5em .5em .5em;
     height: 9em;
@@ -423,7 +424,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
-  /* line 392, ../sass/screen.scss */
+  /* line 393, ../sass/screen.scss */
   .caption span {
     display: block;
     position: relative;
@@ -436,7 +437,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform:  scale(1, 1) rotateZ(-5deg);
   }
 
-  /* line 403, ../sass/screen.scss */
+  /* line 404, ../sass/screen.scss */
   a.icon {
     display: inline-block;
     font-size: 50px;
@@ -444,18 +445,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
     padding: 2px;
   }
-  /* line 411, ../sass/screen.scss */
+  /* line 412, ../sass/screen.scss */
   a.icon:before {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 416, ../sass/screen.scss */
+  /* line 417, ../sass/screen.scss */
   a.icon:hover {
     color: white;
   }
-  /* line 421, ../sass/screen.scss */
+  /* line 422, ../sass/screen.scss */
   a.icon:hover:before {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -464,42 +465,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
   }
 
-  /* line 428, ../sass/screen.scss */
+  /* line 429, ../sass/screen.scss */
   .overflow-container {
     overflow: hidden;
   }
 
-  /* line 433, ../sass/screen.scss */
+  /* line 434, ../sass/screen.scss */
   .height-480 {
     height: 480px;
   }
 
-  /* line 438, ../sass/screen.scss */
+  /* line 439, ../sass/screen.scss */
   .height-360 {
     height: 360px;
   }
 
-  /* line 443, ../sass/screen.scss */
+  /* line 444, ../sass/screen.scss */
   .height-320 {
     height: 320px;
   }
 
-  /* line 448, ../sass/screen.scss */
+  /* line 449, ../sass/screen.scss */
   .height-240 {
     height: 240px;
   }
 
-  /* line 453, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .height-160 {
     height: 160px;
   }
 
-  /* line 457, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   .resume-page {
     margin-top: -40px;
     height: 400px;
   }
-  /* line 461, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   .resume-page a {
     -webkit-transform:  scale(1, 1) rotateZ(5deg);
     -moz-transform:  scale(1, 1) rotateZ(5deg);
@@ -516,7 +517,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: 0.2s all, 1s;
     transition: 0.2s all, 1s;
   }
-  /* line 471, ../sass/screen.scss */
+  /* line 472, ../sass/screen.scss */
   .resume-page a:hover {
     -webkit-transform:  scale(1.05, 1.05) rotateZ(5deg);
     -moz-transform:  scale(1.05, 1.05) rotateZ(5deg);
@@ -524,7 +525,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform:  scale(1.05, 1.05) rotateZ(5deg);
     transform:  scale(1.05, 1.05) rotateZ(5deg);
   }
-  /* line 475, ../sass/screen.scss */
+  /* line 476, ../sass/screen.scss */
   .resume-page a:after {
     -webkit-transition: 0.2s all, 1s;
     -moz-transition: 0.2s all, 1s;
@@ -541,13 +542,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 2px solid #ebebeb;
     opacity: 0;
   }
-  /* line 489, ../sass/screen.scss */
+  /* line 490, ../sass/screen.scss */
   .resume-page a:hover:after {
     background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
     border: 2px solid #d00;
     opacity: 1;
   }
-  /* line 497, ../sass/screen.scss */
+  /* line 498, ../sass/screen.scss */
   .resume-page img {
     border: 2px solid #ebebeb;
   }

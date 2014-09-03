@@ -292,6 +292,7 @@ $phonewidth: 640;
 				color: white;
 				padding: 5px;
 				width: 100%;
+				max-width: 100%;
 				font-size: 1em;
 				border: 0;
 				@include single-transition(background, 1s);
@@ -302,7 +303,7 @@ $phonewidth: 640;
 			}
 
 			.form-submit {
-				margin: 0 1em;
+				margin: 0 1em 3.5em;
 
 				button {
 					margin: 0;
