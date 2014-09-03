@@ -276,7 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #contact {
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    border-top: 10px solid #a1c1be;
+    border-top: 10px solid black;
   }
   /* line 259, ../sass/screen.scss */
   #contact .contact-form {
