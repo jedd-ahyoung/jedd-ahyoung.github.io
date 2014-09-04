@@ -264,6 +264,11 @@ $phonewidth: 640;
 				margin: 0 1em;
 				padding: .5em 5px;
 				background: #000;
+				@include single-transition(background, .5s);
+
+				&.invalid {
+					background: #500;
+				}
 
 				span {
 					font-family: 'Raleway', 'sans-serif';
@@ -317,7 +322,7 @@ $phonewidth: 640;
 					background: black;
 					color: white;
 					font-family: 'Raleway', 'sans-serif';
-					@include single-transition(background, 1s);
+					@include single-transition(all, 1s);
 
 					&:focus, &:hover {
 						background: rgba(192, 192, 192, 0.1);

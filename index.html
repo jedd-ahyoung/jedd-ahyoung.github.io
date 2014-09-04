@@ -17,7 +17,7 @@
 			ga('send', 'pageview');
 		}
 	</script>
-	<script type="text/javascript" src="js/lib/140medley.min.js"></script>
+	<script type="text/javascript" src="js/lib/140medley/140medley.js"></script>
 	<script type="text/javascript" src="js/app/main.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
@@ -74,10 +74,10 @@
 					<div class="column on-2 height-360">
 						<p>Interested in what I'm doing? Get in touch!</p>
 					</div><div class="column on-2">
-						<form class="contact-form">
+						<form class="contact-form" method="post" action="#" onsubmit="validateAndSend(this); return false;">
 							<label for="form-name">
 								<span>Name</span>
-								<input id="form-name" type="email" placeholder="John Doe">
+								<input id="form-name" type="text" placeholder="John Doe">
 							</label>
 							<label for="form-email">
 								<span>Email</span>
