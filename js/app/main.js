@@ -42,11 +42,11 @@
 		var name = form['form-name'].value;
 		var email = form['form-email'].value;
 		var message = form['form-message'].value;
-		var antispam = form['form-antispam'].value || '';
+		var antispam = form['form-antispam'].value;
+
 
 		// Validate all values.
-		if (!!(antispam === '' &
-			isNameValid(name, form['form-name'].parentNode) &
+		if (!!(isNameValid(name, form['form-name'].parentNode) &
 			isEmailValid(email, form['form-email'].parentNode) &
 			isMessageValid(message, form['form-message'].parentNode)))
 		{
@@ -56,6 +56,7 @@
 				data: {
 					name: name,
 					email: email,
+					antispam: antispam,
 					message: message
 				}
 			};
@@ -66,12 +67,13 @@
 					form['form-name'].value = null;
 					form['form-email'].value = null;
 					form['form-message'].value = null;
+					form['form-antispam'].value = null;
 
 					// Display confirmation message.
 					$(form).addClass('completely-hidden');
 				})
 				.fail(function (data) {
-
+					$(form).addClass('completely-hidden');
 				});
 		}
 	};
