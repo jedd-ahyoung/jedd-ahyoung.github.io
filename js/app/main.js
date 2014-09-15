@@ -1,16 +1,38 @@
 (function () {
-	function isNameValid (value) {
-		return (value && typeof(value) === 'string');
+	function isNameValid (value, node) {
+		var valid = value && (typeof(value) === 'string');
+
+		if (!valid) {
+			node.classList.add('invalid');
+		} else {
+			node.classList.remove('invalid');
+		}
+
+		return valid;
 	};
 
-	function isEmailValid (value) {
-		return (value && typeof(value) === 'string');
+	function isEmailValid (value, node) {
+		var valid = (value && typeof(value) === 'string');
 		// Probably should use regex here as well, or at least modernizer.
+		if (!valid) {
+			node.classList.add('invalid');
+		} else {
+			node.classList.remove('invalid');
+		}
+
+		return valid;
 	};
 
-	function isMessageValid (value) {
-		return (value && typeof(value) === 'string');
+	function isMessageValid (value, node) {
+		var valid = (value && typeof(value) === 'string');
 		// Might be worth it to check length of message.
+		if (!valid) {
+			node.classList.add('invalid');
+		} else {
+			node.classList.remove('invalid');
+		}
+
+		return valid;
 	};
 
 	var validateAndSend = function (form) {
@@ -19,10 +41,15 @@
 		var message = form['form-message'].value;
 
 		// Validate all values.
-		form['form-name'].parentNode.className = form['form-name'].parentNode.className + isNameValid(name) ? '' : ' invalid';
-		form['form-email'].parentNode.className = form['form-email'].parentNode.className + isEmailValid(email) ? '' : ' invalid';
-		form['form-message'].parentNode.className = form['form-message'].parentNode.className + isMessageValid(message) ? '' : ' invalid';
-		// if valid, send the message.
+		if (!!(isNameValid(name, form['form-name'].parentNode) &
+			isEmailValid(email, form['form-email'].parentNode) &
+			isMessageValid(message, form['form-message'].parentNode)))
+		{
+			// if valid, send the message.
+			form['form-name'].value = null;
+			form['form-email'].value = null;
+			form['form-message'].value = null;
+		}
 	};
 
 	window.validateAndSend = validateAndSend;
