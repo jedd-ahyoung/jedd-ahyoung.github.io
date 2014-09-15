@@ -42,9 +42,11 @@
 		var name = form['form-name'].value;
 		var email = form['form-email'].value;
 		var message = form['form-message'].value;
+		var antispam = form['form-antispam'].value || '';
 
 		// Validate all values.
-		if (!!(isNameValid(name, form['form-name'].parentNode) &
+		if (!!(antispam === '' &
+			isNameValid(name, form['form-name'].parentNode) &
 			isEmailValid(email, form['form-email'].parentNode) &
 			isMessageValid(message, form['form-message'].parentNode)))
 		{
@@ -67,7 +69,6 @@
 
 					// Display confirmation message.
 					$(form).addClass('completely-hidden');
-
 				})
 				.fail(function (data) {
 
