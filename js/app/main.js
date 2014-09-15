@@ -35,6 +35,9 @@
 		return valid;
 	};
 
+	var submitted = false;
+	var endpoint = 'myurl';
+
 	var validateAndSend = function (form) {
 		var name = form['form-name'].value;
 		var email = form['form-email'].value;
@@ -45,10 +48,30 @@
 			isEmailValid(email, form['form-email'].parentNode) &
 			isMessageValid(message, form['form-message'].parentNode)))
 		{
+			var params = {
+				type: 'POST',
+				url: endpoint,
+				data: {
+					name: name,
+					email: email,
+					message: message
+				}
+			};
 			// if valid, send the message.
-			form['form-name'].value = null;
-			form['form-email'].value = null;
-			form['form-message'].value = null;
+			$.ajax(params)
+				.done(function (data) {
+					// Reset form fields.
+					form['form-name'].value = null;
+					form['form-email'].value = null;
+					form['form-message'].value = null;
+
+					// Display confirmation message.
+					$(form).addClass('completely-hidden');
+
+				})
+				.fail(function (data) {
+
+				});
 		}
 	};
 
