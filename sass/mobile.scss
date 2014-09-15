@@ -403,7 +403,6 @@ $phonewidth: 640;
 	}
 
 	.completely-hidden {
-		display: none;
+		display: none !important;
 	}
 }
-

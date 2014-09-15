@@ -560,4 +560,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .resume-page img {
     border: 2px solid #ebebeb;
   }
+
+  /* line 508, ../sass/screen.scss */
+  .completely-hidden {
+    display: none !important;
+  }
 }
