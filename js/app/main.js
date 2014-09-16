@@ -36,14 +36,13 @@
 	};
 
 	var submitted = false;
-	var endpoint = 'myurl';
+	var endpoint = '//www.jedd-ahyoung.com/contact.php';
 
 	var validateAndSend = function (form) {
 		var name = form['form-name'].value;
 		var email = form['form-email'].value;
 		var message = form['form-message'].value;
 		var antispam = form['form-antispam'].value;
-
 
 		// Validate all values.
 		if (!!(isNameValid(name, form['form-name'].parentNode) &
@@ -64,13 +63,17 @@
 			$.ajax(params)
 				.done(function (data) {
 					// Reset form fields.
-					form['form-name'].value = null;
-					form['form-email'].value = null;
-					form['form-message'].value = null;
-					form['form-antispam'].value = null;
+					if (data.success) {
+						form['form-name'].value = null;
+						form['form-email'].value = null;
+						form['form-message'].value = null;
+						form['form-antispam'].value = null;
 
-					// Display confirmation message.
-					$(form).addClass('completely-hidden');
+						// Display confirmation message.
+						$(form).addClass('completely-hidden');
+					} else {
+						// Show a message about the message not being sent, and attempt to store message to localstorage.
+					}
 				})
 				.fail(function (data) {
 					$(form).addClass('completely-hidden');
