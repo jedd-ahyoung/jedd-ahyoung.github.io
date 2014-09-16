@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	if (empty($_POST['antispam'])) {
 		$to = 'jedd.ahyoung@gmail.com';
 		$from = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-		$subject = str_replace(array("\r","\n"), array(" "," "), "Contact Form: Message from $_POST['name'] ($_POST['email']) ");
+		$subject = str_replace(array("\r","\n"), array(" "," "), 'Contact Form: Message from ' . $_POST['name'] . ' (' . $_POST['email'] . ') ');
 		$message = $_POST['message'];
 
 		$headers = 'From: ' . $from;
