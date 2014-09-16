@@ -15,9 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 		$message = $_POST['message'];
 
 		$headers = 'From: ' . $from;
-	}
 
-	echo json_encode(array('success: ', mail($to, $subject, $message, $headers)));
+		header('Content-Type: application/json');
+		echo json_encode(array('success' => mail($to, $subject, $message, $headers)));
+	}
 }
 
 ?>

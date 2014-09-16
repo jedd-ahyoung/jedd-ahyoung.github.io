@@ -36,7 +36,7 @@
 	};
 
 	var submitted = false;
-	var endpoint = '//www.jedd-ahyoung.com/contact.php';
+	var endpoint = '/contact.php';
 
 	var validateAndSend = function (form) {
 		var name = form['form-name'].value;
