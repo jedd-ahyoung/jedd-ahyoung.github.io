@@ -282,27 +282,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #contact .form-submitted {
     display: block;
     margin: 0 1em;
-    padding: .5em 5px;
+    padding: .5em 5px 50px;
     background: #000;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
     transition: background 0.5s;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
-  /* line 266, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
+  #contact .form-submitted.invalid {
+    background: #500;
+  }
+  /* line 272, ../sass/screen.scss */
   #contact .form-submitted .thanks {
     font-family: 'Raleway', 'sans-serif';
     font-variant: small-caps;
   }
-  /* line 271, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   #contact .form-submitted .thanks span {
     font-size: 1.4em;
   }
-  /* line 277, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
   #contact .contact-form {
     width: 100%;
   }
-  /* line 280, ../sass/screen.scss */
+  /* line 286, ../sass/screen.scss */
   #contact .contact-form label {
     display: block;
     margin: 0 1em;
@@ -313,18 +323,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 0.5s;
     transition: background 0.5s;
   }
-  /* line 287, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   #contact .contact-form label.invalid {
     background: #500;
   }
-  /* line 291, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   #contact .contact-form label span {
     font-family: 'Raleway', 'sans-serif';
     text-transform: uppercase;
     display: block;
     border-bottom: 1px dotted white;
   }
-  /* line 299, ../sass/screen.scss */
+  /* line 305, ../sass/screen.scss */
   #contact .contact-form input[type="text"], #contact .contact-form input[type="email"] {
     background: transparent;
     color: white;
@@ -337,11 +347,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 308, ../sass/screen.scss */
+  /* line 314, ../sass/screen.scss */
   #contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 313, ../sass/screen.scss */
+  /* line 319, ../sass/screen.scss */
   #contact .contact-form textarea {
     background: transparent;
     color: white;
@@ -355,15 +365,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 323, ../sass/screen.scss */
+  /* line 329, ../sass/screen.scss */
   #contact .contact-form textarea:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 328, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   #contact .contact-form .form-submit {
     margin: 0 1em 3.5em;
   }
-  /* line 331, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   #contact .contact-form .form-submit button {
     margin: 0;
     border: 0;
@@ -386,12 +396,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 345, ../sass/screen.scss */
+  /* line 351, ../sass/screen.scss */
   #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
     background: rgba(192, 192, 192, 0.1);
   }
 
-  /* line 353, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   .lastchapter {
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
@@ -401,7 +411,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-bottom-right-radius: 30px;
   }
 
-  /* line 358, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   #sidebar {
     background: #9999bb;
     float: right;
@@ -409,7 +419,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     min-height: 30em;
   }
 
-  /* line 366, ../sass/screen.scss */
+  /* line 372, ../sass/screen.scss */
   #footer {
     padding-top: 2em;
     color: white;
@@ -418,30 +428,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
   }
 
-  /* line 376, ../sass/screen.scss */
+  /* line 382, ../sass/screen.scss */
   .codewrapper {
     background: white;
     padding: 1em;
   }
 
-  /* line 382, ../sass/screen.scss */
+  /* line 388, ../sass/screen.scss */
   #about {
     background: white;
     border: 0;
   }
 
-  /* line 392, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .column {
     display: inline-block;
     vertical-align: top;
     margin: 0;
   }
-  /* line 398, ../sass/screen.scss */
+  /* line 404, ../sass/screen.scss */
   .column p {
     margin: 1em;
   }
 
-  /* line 404, ../sass/screen.scss */
+  /* line 410, ../sass/screen.scss */
   .caption {
     padding: .5em .5em .5em .5em;
     height: 9em;
@@ -452,7 +462,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
-  /* line 416, ../sass/screen.scss */
+  /* line 422, ../sass/screen.scss */
   .caption span {
     display: block;
     position: relative;
@@ -465,7 +475,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform:  scale(1, 1) rotateZ(-5deg);
   }
 
-  /* line 427, ../sass/screen.scss */
+  /* line 433, ../sass/screen.scss */
   a.icon {
     display: inline-block;
     font-size: 50px;
@@ -473,18 +483,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
     padding: 2px;
   }
-  /* line 435, ../sass/screen.scss */
+  /* line 441, ../sass/screen.scss */
   a.icon:before {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 440, ../sass/screen.scss */
+  /* line 446, ../sass/screen.scss */
   a.icon:hover {
     color: white;
   }
-  /* line 445, ../sass/screen.scss */
+  /* line 451, ../sass/screen.scss */
   a.icon:hover:before {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -493,42 +503,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
   }
 
-  /* line 452, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   .overflow-container {
     overflow: hidden;
   }
 
-  /* line 457, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   .height-480 {
     height: 480px;
   }
 
-  /* line 462, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   .height-360 {
     height: 360px;
   }
 
-  /* line 467, ../sass/screen.scss */
+  /* line 473, ../sass/screen.scss */
   .height-320 {
     height: 320px;
   }
 
-  /* line 472, ../sass/screen.scss */
+  /* line 478, ../sass/screen.scss */
   .height-240 {
     height: 240px;
   }
 
-  /* line 477, ../sass/screen.scss */
+  /* line 483, ../sass/screen.scss */
   .height-160 {
     height: 160px;
   }
 
-  /* line 481, ../sass/screen.scss */
+  /* line 487, ../sass/screen.scss */
   .resume-page {
     margin-top: -40px;
     height: 400px;
   }
-  /* line 485, ../sass/screen.scss */
+  /* line 491, ../sass/screen.scss */
   .resume-page a {
     -webkit-transform:  scale(1, 1) rotateZ(5deg);
     -moz-transform:  scale(1, 1) rotateZ(5deg);
@@ -545,7 +555,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: 0.2s all, 1s;
     transition: 0.2s all, 1s;
   }
-  /* line 495, ../sass/screen.scss */
+  /* line 501, ../sass/screen.scss */
   .resume-page a:hover {
     -webkit-transform:  scale(1.05, 1.05) rotateZ(5deg);
     -moz-transform:  scale(1.05, 1.05) rotateZ(5deg);
@@ -553,7 +563,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform:  scale(1.05, 1.05) rotateZ(5deg);
     transform:  scale(1.05, 1.05) rotateZ(5deg);
   }
-  /* line 499, ../sass/screen.scss */
+  /* line 505, ../sass/screen.scss */
   .resume-page a:after {
     -webkit-transition: 0.2s all, 1s;
     -moz-transition: 0.2s all, 1s;
@@ -570,18 +580,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 2px solid #ebebeb;
     opacity: 0;
   }
-  /* line 513, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   .resume-page a:hover:after {
     background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
     border: 2px solid #d00;
     opacity: 1;
   }
-  /* line 521, ../sass/screen.scss */
+  /* line 527, ../sass/screen.scss */
   .resume-page img {
     border: 2px solid #ebebeb;
   }
 
-  /* line 526, ../sass/screen.scss */
+  /* line 532, ../sass/screen.scss */
   .completely-hidden {
     display: none !important;
   }

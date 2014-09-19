@@ -259,9 +259,15 @@ $phonewidth: 640;
 		.form-submitted {
 			display: block;
 			margin: 0 1em;
-			padding: .5em 5px;
+			padding: .5em 5px 50px;
 			background: #000;
 			@include single-transition(background, .5s);
+			@include border-bottom-radius(30px);
+
+
+			&.invalid {
+				background: #500;
+			}
 
 			.thanks {
 				font-family: 'Raleway', 'sans-serif';
