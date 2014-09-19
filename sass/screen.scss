@@ -262,11 +262,13 @@ $phonewidth: 640;
 			padding: .5em 5px 50px;
 			background: #000;
 			@include single-transition(background, .5s);
-			@include border-bottom-radius(30px);
-
 
 			&.invalid {
 				background: #500;
+			}
+
+			&.bottom-radius {
+				@include border-bottom-radius(30px);
 			}
 
 			.thanks {

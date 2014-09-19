@@ -71,6 +71,7 @@
 
 						// Display confirmation message.
 						$(form).addClass('completely-hidden');
+						$('#form-error').addClass('completely-hidden');
 
 						// Populate success message.
 						var submitted = $('#form-submitted');
@@ -78,10 +79,11 @@
 						submitted.removeClass('completely-hidden');
 					} else {
 						// Show a message about the message not being sent, and attempt to store message to localstorage.
+						$('#form-error').removeClass('completely-hidden');
 					}
 				})
 				.fail(function (data) {
-					$(form).addClass('completely-hidden');
+					$('#form-error').removeClass('completely-hidden');
 				});
 		}
 	};
