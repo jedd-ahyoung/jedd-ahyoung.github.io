@@ -289,11 +289,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 0.5s;
     transition: background 0.5s;
   }
-  /* line 267, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
+  #contact .form-submitted .thanks {
+    font-family: 'Raleway', 'sans-serif';
+    font-variant: small-caps;
+  }
+  /* line 271, ../sass/screen.scss */
+  #contact .form-submitted .thanks span {
+    font-size: 1.4em;
+  }
+  /* line 277, ../sass/screen.scss */
   #contact .contact-form {
     width: 100%;
   }
-  /* line 270, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   #contact .contact-form label {
     display: block;
     margin: 0 1em;
@@ -304,18 +313,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 0.5s;
     transition: background 0.5s;
   }
-  /* line 277, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   #contact .contact-form label.invalid {
     background: #500;
   }
-  /* line 281, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   #contact .contact-form label span {
     font-family: 'Raleway', 'sans-serif';
     text-transform: uppercase;
     display: block;
     border-bottom: 1px dotted white;
   }
-  /* line 289, ../sass/screen.scss */
+  /* line 299, ../sass/screen.scss */
   #contact .contact-form input[type="text"], #contact .contact-form input[type="email"] {
     background: transparent;
     color: white;
@@ -328,11 +337,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 298, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   #contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 303, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   #contact .contact-form textarea {
     background: transparent;
     color: white;
@@ -346,15 +355,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 313, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   #contact .contact-form textarea:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 318, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   #contact .contact-form .form-submit {
     margin: 0 1em 3.5em;
   }
-  /* line 321, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   #contact .contact-form .form-submit button {
     margin: 0;
     border: 0;
@@ -377,12 +386,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 335, ../sass/screen.scss */
+  /* line 345, ../sass/screen.scss */
   #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
     background: rgba(192, 192, 192, 0.1);
   }
 
-  /* line 343, ../sass/screen.scss */
+  /* line 353, ../sass/screen.scss */
   .lastchapter {
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
@@ -392,7 +401,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-bottom-right-radius: 30px;
   }
 
-  /* line 348, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   #sidebar {
     background: #9999bb;
     float: right;
@@ -400,7 +409,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     min-height: 30em;
   }
 
-  /* line 356, ../sass/screen.scss */
+  /* line 366, ../sass/screen.scss */
   #footer {
     padding-top: 2em;
     color: white;
@@ -409,30 +418,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
   }
 
-  /* line 366, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .codewrapper {
     background: white;
     padding: 1em;
   }
 
-  /* line 372, ../sass/screen.scss */
+  /* line 382, ../sass/screen.scss */
   #about {
     background: white;
     border: 0;
   }
 
-  /* line 382, ../sass/screen.scss */
+  /* line 392, ../sass/screen.scss */
   .column {
     display: inline-block;
     vertical-align: top;
     margin: 0;
   }
-  /* line 388, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .column p {
     margin: 1em;
   }
 
-  /* line 394, ../sass/screen.scss */
+  /* line 404, ../sass/screen.scss */
   .caption {
     padding: .5em .5em .5em .5em;
     height: 9em;
@@ -443,7 +452,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
-  /* line 406, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   .caption span {
     display: block;
     position: relative;
@@ -456,7 +465,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform:  scale(1, 1) rotateZ(-5deg);
   }
 
-  /* line 417, ../sass/screen.scss */
+  /* line 427, ../sass/screen.scss */
   a.icon {
     display: inline-block;
     font-size: 50px;
@@ -464,18 +473,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
     padding: 2px;
   }
-  /* line 425, ../sass/screen.scss */
+  /* line 435, ../sass/screen.scss */
   a.icon:before {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 430, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   a.icon:hover {
     color: white;
   }
-  /* line 435, ../sass/screen.scss */
+  /* line 445, ../sass/screen.scss */
   a.icon:hover:before {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -484,42 +493,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
   }
 
-  /* line 442, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   .overflow-container {
     overflow: hidden;
   }
 
-  /* line 447, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   .height-480 {
     height: 480px;
   }
 
-  /* line 452, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   .height-360 {
     height: 360px;
   }
 
-  /* line 457, ../sass/screen.scss */
+  /* line 467, ../sass/screen.scss */
   .height-320 {
     height: 320px;
   }
 
-  /* line 462, ../sass/screen.scss */
+  /* line 472, ../sass/screen.scss */
   .height-240 {
     height: 240px;
   }
 
-  /* line 467, ../sass/screen.scss */
+  /* line 477, ../sass/screen.scss */
   .height-160 {
     height: 160px;
   }
 
-  /* line 471, ../sass/screen.scss */
+  /* line 481, ../sass/screen.scss */
   .resume-page {
     margin-top: -40px;
     height: 400px;
   }
-  /* line 475, ../sass/screen.scss */
+  /* line 485, ../sass/screen.scss */
   .resume-page a {
     -webkit-transform:  scale(1, 1) rotateZ(5deg);
     -moz-transform:  scale(1, 1) rotateZ(5deg);
@@ -536,7 +545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: 0.2s all, 1s;
     transition: 0.2s all, 1s;
   }
-  /* line 485, ../sass/screen.scss */
+  /* line 495, ../sass/screen.scss */
   .resume-page a:hover {
     -webkit-transform:  scale(1.05, 1.05) rotateZ(5deg);
     -moz-transform:  scale(1.05, 1.05) rotateZ(5deg);
@@ -544,7 +553,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform:  scale(1.05, 1.05) rotateZ(5deg);
     transform:  scale(1.05, 1.05) rotateZ(5deg);
   }
-  /* line 489, ../sass/screen.scss */
+  /* line 499, ../sass/screen.scss */
   .resume-page a:after {
     -webkit-transition: 0.2s all, 1s;
     -moz-transition: 0.2s all, 1s;
@@ -561,18 +570,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 2px solid #ebebeb;
     opacity: 0;
   }
-  /* line 503, ../sass/screen.scss */
+  /* line 513, ../sass/screen.scss */
   .resume-page a:hover:after {
     background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
     border: 2px solid #d00;
     opacity: 1;
   }
-  /* line 511, ../sass/screen.scss */
+  /* line 521, ../sass/screen.scss */
   .resume-page img {
     border: 2px solid #ebebeb;
   }
 
-  /* line 516, ../sass/screen.scss */
+  /* line 526, ../sass/screen.scss */
   .completely-hidden {
     display: none !important;
   }

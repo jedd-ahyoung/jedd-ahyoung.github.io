@@ -262,6 +262,16 @@ $phonewidth: 640;
 			padding: .5em 5px;
 			background: #000;
 			@include single-transition(background, .5s);
+
+			.thanks {
+				font-family: 'Raleway', 'sans-serif';
+				font-variant: small-caps;
+				// text-transform: uppercase;
+
+				span {
+					font-size: 1.4em;
+				}
+			}
 		}
 
 		.contact-form {
