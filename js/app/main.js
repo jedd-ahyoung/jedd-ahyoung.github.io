@@ -74,7 +74,7 @@
 
 						// Populate success message.
 						var submitted = $('#form-submitted');
-						$('span[data-attr="name"]', submitted).text = name;
+						$('span[data-attr="name"]', submitted).text(name);
 						submitted.removeClass('completely-hidden');
 					} else {
 						// Show a message about the message not being sent, and attempt to store message to localstorage.
