@@ -60,6 +60,8 @@
 				}
 			};
 			// if valid, send the message.
+			$('button[type="submit"]', form).prop('disabled', true);
+
 			$.ajax(params)
 				.done(function (data) {
 					// Reset form fields.
@@ -80,10 +82,12 @@
 					} else {
 						// Show a message about the message not being sent, and attempt to store message to localstorage.
 						$('#form-error').removeClass('completely-hidden');
+						$('button[type="submit"]', form).prop('disabled', false);
 					}
 				})
 				.fail(function (data) {
 					$('#form-error').removeClass('completely-hidden');
+					$('button[type="submit"]', form).prop('disabled', false);
 				});
 		}
 	};
