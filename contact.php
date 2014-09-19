@@ -1,35 +1,46 @@
 <?
 
-/* Respond to the AJAX POST. */
+if (preg_match('/(.*\.+)jedd-ahyoung.com$/', strtolower($_SERVER['HTTP_ORIGIN']))) {
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST'
-	&& !empty($_POST['name'])
-	&& !empty($_POST['email'])
-	&& !empty($_POST['message']))
-{
-	// If antispam passes, parse the data and send via email.
-	if (empty($_POST['antispam'])) {
-		// Send the message to my email address.
-		$to = 'jedd.ahyoung@gmail.com';
-		$from = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-		$subject = str_replace(array("\r","\n"), array(" "," "), 'Contact Form: Message from ' . $_POST['name'] . ' (' . $_POST['email'] . ') ');
-		$message = $_POST['message'];
+	/* Respond to the AJAX POST. */
 
-		$headers = 'From: ' . 'confirmation@jedd-ahyoung.com';
+	if ($_SERVER['REQUEST_METHOD'] == 'POST'
+		&& !empty($_POST['name'])
+		&& !empty($_POST['email'])
+		&& !empty($_POST['message']))
+	{
+		// If antispam passes, parse the data and send via email.
+		if (empty($_POST['antispam'])) {
+			// Send the message to my email address.
+			$to = 'jedd.ahyoung@gmail.com';
+			$from = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+			$subject = str_replace(array("\r","\n"), array(" "," "), 'Contact Form: Message from ' . $_POST['name'] . ' (' . $_POST['email'] . ') ');
+			$message = $_POST['message'];
 
-		// Send the confirmation email to the recipient's email address.
-		$confirm_to = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-		$confirm_from = filter_var('confirmation@jedd-ahyoung.com', FILTER_VALIDATE_EMAIL);
-		$confirm_subject = 'Thanks for reaching out, ' . $_POST['name'] . '!';
-		$confirm_message = 'Nothing here yet.';
+			$headers = 'From: ' . 'confirmation@jedd-ahyoung.com';
 
-		$confirm_headers = 'From: ' . $confirm_from;
+			// Send the confirmation email to the recipient's email address.
+			$confirm_to = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+			$confirm_from = filter_var('confirmation@jedd-ahyoung.com', FILTER_VALIDATE_EMAIL);
+			$confirm_subject = 'Thanks for reaching out, ' . $_POST['name'] . '!';
+			$confirm_message = "Thanks for contacting me!\r\n";
+			$confirm_message .= "\r\n";
+			$confirm_message .= "\r\n";
+			$confirm_message .= '-------------------------------------';
+			$confirm_message .= "\r\n";
+			$confirm_message .= $message;
+			$confirm_message .= "\r\n";
+			$confirm_message .= '-------------------------------------';
 
-		mail($confirm_to, $confirm_subject, $confirm_message, $confirm_headers);
+			$confirm_headers = 'From: ' . $confirm_from;
 
-		header('Content-Type: application/json');
-		echo json_encode(array('success' => mail($to, $subject, $message, $headers)));
+			mail($confirm_to, $confirm_subject, $confirm_message, $confirm_headers);
+
+			header('Content-Type: application/json');
+			echo json_encode(array('success' => mail($to, $subject, $message, $headers)));
+		}
 	}
+} else {
+	header('HTTP/1.0 404 Not Found');
 }
-
 ?>
