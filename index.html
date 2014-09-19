@@ -39,7 +39,7 @@
 		<div class="wrapper">
 			<header id="header">
 				<h1><span itemprop="givenName" class="jedd">Jedd</span><wbr /><span itemprop="familyName" class="ahyoung">Ahyoung</span></h1>
-				<p>A <span itemprop="jobTitle">software developer</span><br /> making cool stuff.</p>
+				<p>A <span itemprop="jobTitle">software developer</span><br /> for hire.</p>
 			</header>
 		</div>
 	</div>
@@ -72,8 +72,12 @@
 				</section>
 				<section class="chapter lastchapter" id="contact">
 					<div class="column on-2 height-360">
-						<p>I build applications for the Web using HTML5, CSS, and Javascript frameworks like <a href="https://angularjs.org/">AngularJS</a>. If you have an idea that you'd like to see come to life, or you need a developer for a project, feel free to get in touch!</p>
+						<p>I build applications for the Web using HTML5, CSS, and Javascript frameworks like AngularJS; I also build mobile applications using Phonegap. If you have an idea that you'd like to see come to life, or you need a developer for a project, feel free to get in touch!</p>
 					</div><div class="column on-2">
+						<div id="form-submitted" class="form-submitted completely-hidden">
+							<strong><span data-attr="name"></span>, thanks for reaching out!</strong>
+							Your message has been sent, and a confirmation email has been sent to the email address you provided.
+						</div>
 						<form class="contact-form" method="post" action="#" onsubmit="validateAndSend(this); return false;">
 							<label for="form-name">
 								<span>Name</span>
@@ -92,7 +96,9 @@
 								<input id="form-antispam" type="text" placeholder="Leave this field blank!" />
 							</label>
 							<div class="form-submit">
-								<button type="submit">Contact Me!</button>
+								<button type="submit">
+									<span>Contact Me!</span>
+								</button>
 							</div>
 						</form>
 					</div>

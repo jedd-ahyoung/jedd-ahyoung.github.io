@@ -256,6 +256,14 @@ $phonewidth: 640;
 		color: white;
 		border-top: 10px solid black;
 
+		.form-submitted {
+			display: block;
+			margin: 0 1em;
+			padding: .5em 5px;
+			background: #000;
+			@include single-transition(background, .5s);
+		}
+
 		.contact-form {
 			width: 100%;
 
