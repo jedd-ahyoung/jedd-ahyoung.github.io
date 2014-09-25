@@ -81,6 +81,7 @@ $phonewidth: 640;
 			left: 50%;
 			margin-left: -25%;
 
+<<<<<<< HEAD
 			margin-top: 15%;
 			display: block;
 			font-size: 2em;
@@ -94,6 +95,20 @@ $phonewidth: 640;
 			{
 				margin: 1em;
 				line-height: 1.1em;
+			}
+
+			.headline
+			{
+				margin: 0 1em 1em 1em;
+				line-height: 1.1em;
+			}
+
+			.logo {
+				width: 500px;
+				margin-top: -85px;
+				position: absolute;
+				right: 5px;
+				z-index: -1;
 			}
 
 			h1

@@ -1,601 +1,82 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Invalid CSS after "...gin-left: -25%;": expected "}", was "<<<<<<< HEAD"
+        on line 84 of /Users/jahyoung/Projects/jedd-ahyoung.com/sass/screen.scss
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-@media screen and (min-width: 640px) {
-  /* line 36, ../sass/screen.scss */
-  .on-2 {
-    width: 480px;
-  }
-
-  /* line 41, ../sass/screen.scss */
-  .on-3 {
-    width: 320px;
-  }
-
-  /* line 46, ../sass/screen.scss */
-  .on-4 {
-    width: 240px;
-  }
-
-  /* line 50, ../sass/screen.scss */
-  * {
-    box-sizing: border-box;
-  }
-
-  /* line 55, ../sass/screen.scss */
-  body {
-    background: #666666 url("../images/landingbg.jpg") fixed;
-    padding: 0;
-    margin: 0;
-  }
-
-  /* For dumbass IE. Damn you, M$. */
-  /* line 63, ../sass/screen.scss */
-  #content {
-    position: relative;
-  }
-
-  /* line 67, ../sass/screen.scss */
-  #content {
-    background: rgba(118, 142, 140, 0.8);
-  }
-
-  /* line 72, ../sass/screen.scss */
-  #landing {
-    background: rgba(161, 193, 190, 0.5);
-    height: 540px;
-    position: relative;
-    overflow: hidden;
-  }
-  /* line 79, ../sass/screen.scss */
-  #landing #header {
-    position: absolute;
-    left: 50%;
-    margin-left: -25%;
-    margin-top: 15%;
-    display: block;
-    font-size: 2em;
-    font-family: 'Raleway', 'sans-serif';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 100;
-    padding-top: 40px;
-  }
-  /* line 94, ../sass/screen.scss */
-  #landing #header p {
-    margin: 1em;
-    line-height: 1.1em;
-  }
-  /* line 100, ../sass/screen.scss */
-  #landing #header h1 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 2em;
-  }
-  /* line 106, ../sass/screen.scss */
-  #landing #header h1 .jedd {
-    font-weight: 500;
-    color: black;
-  }
-  /* line 112, ../sass/screen.scss */
-  #landing #header h1 .ahyoung {
-    font-weight: 300;
-    color: white;
-  }
-
-  /* line 121, ../sass/screen.scss */
-  .video {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-width: 960px;
-    height: auto;
-    opacity: 0.1;
-  }
-  /* line 130, ../sass/screen.scss */
-  .video embed {
-    width: 100%;
-  }
-
-  /* line 136, ../sass/screen.scss */
-  .wrapper {
-    margin: auto;
-    width: 960px;
-    position: relative;
-  }
-
-  /* line 143, ../sass/screen.scss */
-  #nav {
-    background: white;
-    height: 30px;
-    margin: 0 0 -15px 0;
-    position: relative;
-    top: -15px;
-    -moz-border-radius-topleft: 30px;
-    -webkit-border-top-left-radius: 30px;
-    border-top-left-radius: 30px;
-    -moz-border-radius-topright: 30px;
-    -webkit-border-top-right-radius: 30px;
-    border-top-right-radius: 30px;
-  }
-  /* line 152, ../sass/screen.scss */
-  #nav ul {
-    background: black;
-    width: 100%;
-    margin: 0;
-    padding: .5em 0;
-  }
-  /* line 159, ../sass/screen.scss */
-  #nav ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  /* line 166, ../sass/screen.scss */
-  #nav ul li a {
-    margin: 0;
-    padding: .5em 2em;
-    text-transform: uppercase;
-    vertical-align: middle;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 1em;
-  }
-  /* line 179, ../sass/screen.scss */
-  #nav ul li a:hover {
-    border-bottom: .2em solid white;
-    padding-bottom: .3em;
-  }
-
-  /* line 190, ../sass/screen.scss */
-  #body {
-    min-height: 500px;
-    width: 100%;
-    overflow: auto;
-  }
-
-  /* line 197, ../sass/screen.scss */
-  .chapter {
-    text-align: left;
-    font-family: 'Muli', 'sans-serif';
-    font-weight: 300;
-    line-height: 1.4em;
-    clear: both;
-  }
-
-  /* line 207, ../sass/screen.scss */
-  #main h3 {
-    font-family: sans-serif;
-    font-variant: small-caps;
-    border-bottom: 3px solid red;
-  }
-  /* line 214, ../sass/screen.scss */
-  #main h4 {
-    font-family: serif;
-  }
-  /* line 219, ../sass/screen.scss */
-  #main a {
-    text-decoration: none;
-  }
-  /* line 223, ../sass/screen.scss */
-  #main a:hover {
-    text-decoration: underline;
-    color: red;
-  }
-  /* line 229, ../sass/screen.scss */
-  #main a:visited {
-    color: #336633;
-  }
-  /* line 235, ../sass/screen.scss */
-  #main dt {
-    font-style: italic;
-    padding: .5em 0 .5em 0;
-  }
-  /* line 241, ../sass/screen.scss */
-  #main dd.explain {
-    margin: 0;
-    padding-bottom: .5em;
-  }
-
-  /* line 248, ../sass/screen.scss */
-  #resume {
-    background: #ebebeb;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  /* line 254, ../sass/screen.scss */
-  #contact {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-top: 10px solid black;
-  }
-  /* line 259, ../sass/screen.scss */
-  #contact .form-submitted {
-    display: block;
-    margin: 0 1em;
-    padding: .5em 5px 50px;
-    background: #000;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-  }
-  /* line 266, ../sass/screen.scss */
-  #contact .form-submitted.invalid {
-    background: #500;
-  }
-  /* line 270, ../sass/screen.scss */
-  #contact .form-submitted.bottom-radius {
-    -moz-border-radius-bottomleft: 30px;
-    -webkit-border-bottom-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    -moz-border-radius-bottomright: 30px;
-    -webkit-border-bottom-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-  /* line 274, ../sass/screen.scss */
-  #contact .form-submitted .thanks {
-    font-family: 'Raleway', 'sans-serif';
-    font-variant: small-caps;
-  }
-  /* line 279, ../sass/screen.scss */
-  #contact .form-submitted .thanks span {
-    font-size: 1.4em;
-  }
-  /* line 285, ../sass/screen.scss */
-  #contact .contact-form {
-    width: 100%;
-  }
-  /* line 288, ../sass/screen.scss */
-  #contact .contact-form label {
-    display: block;
-    margin: 0 1em;
-    padding: .5em 5px;
-    background: #000;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-  }
-  /* line 295, ../sass/screen.scss */
-  #contact .contact-form label.invalid {
-    background: #500;
-  }
-  /* line 299, ../sass/screen.scss */
-  #contact .contact-form label span {
-    font-family: 'Raleway', 'sans-serif';
-    text-transform: uppercase;
-    display: block;
-    border-bottom: 1px dotted white;
-  }
-  /* line 307, ../sass/screen.scss */
-  #contact .contact-form input[type="text"], #contact .contact-form input[type="email"] {
-    background: transparent;
-    color: white;
-    border: 0;
-    padding: 5px;
-    font-size: 1em;
-    width: 100%;
-    -webkit-transition: background 1s;
-    -moz-transition: background 1s;
-    -o-transition: background 1s;
-    transition: background 1s;
-  }
-  /* line 316, ../sass/screen.scss */
-  #contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  /* line 321, ../sass/screen.scss */
-  #contact .contact-form textarea {
-    background: transparent;
-    color: white;
-    padding: 5px;
-    width: 100%;
-    max-width: 100%;
-    font-size: 1em;
-    border: 0;
-    -webkit-transition: background 1s;
-    -moz-transition: background 1s;
-    -o-transition: background 1s;
-    transition: background 1s;
-  }
-  /* line 331, ../sass/screen.scss */
-  #contact .contact-form textarea:focus {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  /* line 336, ../sass/screen.scss */
-  #contact .contact-form .form-submit {
-    margin: 0 1em 3.5em;
-  }
-  /* line 339, ../sass/screen.scss */
-  #contact .contact-form .form-submit button {
-    margin: 0;
-    border: 0;
-    font-size: 1em;
-    text-transform: uppercase;
-    padding: 1em;
-    display: block;
-    width: 100%;
-    -moz-border-radius-bottomleft: 30px;
-    -webkit-border-bottom-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    -moz-border-radius-bottomright: 30px;
-    -webkit-border-bottom-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background: black;
-    color: white;
-    font-family: 'Raleway', 'sans-serif';
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 353, ../sass/screen.scss */
-  #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
-    background: rgba(192, 192, 192, 0.1);
-  }
-
-  /* line 361, ../sass/screen.scss */
-  .lastchapter {
-    -moz-border-radius-bottomleft: 30px;
-    -webkit-border-bottom-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    -moz-border-radius-bottomright: 30px;
-    -webkit-border-bottom-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-
-  /* line 366, ../sass/screen.scss */
-  #sidebar {
-    background: #9999bb;
-    float: right;
-    width: 30%;
-    min-height: 30em;
-  }
-
-  /* line 374, ../sass/screen.scss */
-  #footer {
-    padding-top: 2em;
-    color: white;
-    clear: both;
-    font-family: sans-serif;
-    text-align: center;
-  }
-
-  /* line 384, ../sass/screen.scss */
-  .codewrapper {
-    background: white;
-    padding: 1em;
-  }
-
-  /* line 390, ../sass/screen.scss */
-  #about {
-    background: white;
-    border: 0;
-  }
-
-  /* line 400, ../sass/screen.scss */
-  .column {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-  }
-  /* line 406, ../sass/screen.scss */
-  .column p {
-    margin: 1em;
-  }
-
-  /* line 412, ../sass/screen.scss */
-  .caption {
-    padding: .5em .5em .5em .5em;
-    height: 9em;
-    font-size: 2.5em;
-    line-height: 1.2em;
-    font-family: 'Rock Salt', serif;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-  /* line 424, ../sass/screen.scss */
-  .caption span {
-    display: block;
-    position: relative;
-    top: .5em;
-    left: .2em;
-    -webkit-transform:  scale(1, 1) rotateZ(-5deg);
-    -moz-transform:  scale(1, 1) rotateZ(-5deg);
-    -ms-transform:  scale(1, 1) rotateZ(-5deg);
-    -o-transform:  scale(1, 1) rotateZ(-5deg);
-    transform:  scale(1, 1) rotateZ(-5deg);
-  }
-
-  /* line 435, ../sass/screen.scss */
-  a.icon {
-    display: inline-block;
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    padding: 2px;
-  }
-  /* line 443, ../sass/screen.scss */
-  a.icon:before {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 448, ../sass/screen.scss */
-  a.icon:hover {
-    color: white;
-  }
-  /* line 453, ../sass/screen.scss */
-  a.icon:hover:before {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    color: white;
-  }
-
-  /* line 460, ../sass/screen.scss */
-  .overflow-container {
-    overflow: hidden;
-  }
-
-  /* line 465, ../sass/screen.scss */
-  .height-480 {
-    height: 480px;
-  }
-
-  /* line 470, ../sass/screen.scss */
-  .height-360 {
-    height: 360px;
-  }
-
-  /* line 475, ../sass/screen.scss */
-  .height-320 {
-    height: 320px;
-  }
-
-  /* line 480, ../sass/screen.scss */
-  .height-240 {
-    height: 240px;
-  }
-
-  /* line 485, ../sass/screen.scss */
-  .height-160 {
-    height: 160px;
-  }
-
-  /* line 489, ../sass/screen.scss */
-  .resume-page {
-    margin-top: -40px;
-    height: 400px;
-  }
-  /* line 493, ../sass/screen.scss */
-  .resume-page a {
-    -webkit-transform:  scale(1, 1) rotateZ(5deg);
-    -moz-transform:  scale(1, 1) rotateZ(5deg);
-    -ms-transform:  scale(1, 1) rotateZ(5deg);
-    -o-transform:  scale(1, 1) rotateZ(5deg);
-    transform:  scale(1, 1) rotateZ(5deg);
-    position: relative;
-    top: -8px;
-    left: -15px;
-    display: inline-block;
-    margin: 40px 40px;
-    -webkit-transition: 0.2s all, 1s;
-    -moz-transition: 0.2s all, 1s;
-    -o-transition: 0.2s all, 1s;
-    transition: 0.2s all, 1s;
-  }
-  /* line 503, ../sass/screen.scss */
-  .resume-page a:hover {
-    -webkit-transform:  scale(1.05, 1.05) rotateZ(5deg);
-    -moz-transform:  scale(1.05, 1.05) rotateZ(5deg);
-    -ms-transform:  scale(1.05, 1.05) rotateZ(5deg);
-    -o-transform:  scale(1.05, 1.05) rotateZ(5deg);
-    transform:  scale(1.05, 1.05) rotateZ(5deg);
-  }
-  /* line 507, ../sass/screen.scss */
-  .resume-page a:after {
-    -webkit-transition: 0.2s all, 1s;
-    -moz-transition: 0.2s all, 1s;
-    -o-transition: 0.2s all, 1s;
-    transition: 0.2s all, 1s;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url("../images/pdf.png") no-repeat 40% 20%;
-    border: 2px solid #ebebeb;
-    opacity: 0;
-  }
-  /* line 521, ../sass/screen.scss */
-  .resume-page a:hover:after {
-    background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
-    border: 2px solid #d00;
-    opacity: 1;
-  }
-  /* line 529, ../sass/screen.scss */
-  .resume-page img {
-    border: 2px solid #ebebeb;
-  }
-
-  /* line 534, ../sass/screen.scss */
-  .completely-hidden {
-    display: none !important;
-  }
-}
+Backtrace:
+/Users/jahyoung/Projects/jedd-ahyoung.com/sass/screen.scss:84
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:536:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:196:in `include_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
+/Library/Ruby/Gems/2.0.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+/usr/bin/compass:23:in `load'
+/usr/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...gin-left: -25%;\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 84 of /Users/jahyoung/Projects/jedd-ahyoung.com/sass/screen.scss"; }
