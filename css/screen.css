@@ -129,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   /* line 93, ../sass/screen.scss */
   #landing #header p {
-    margin: 2em 1em 1em;
+    margin: 1em;
     line-height: 1.1em;
   }
   /* line 99, ../sass/screen.scss */
@@ -139,10 +139,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   /* line 104, ../sass/screen.scss */
   #landing #header .logo {
-    width: 500px;
-    margin-top: -118px;
+    width: 400px;
+    margin-top: -108px;
+    margin-left: -200px;
     position: absolute;
-    right: 5px;
     z-index: -1;
   }
   /* line 113, ../sass/screen.scss */
