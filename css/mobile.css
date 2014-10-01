@@ -129,24 +129,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 1em;
     line-height: 1.1em;
   }
-  /* line 96, ../sass/mobile.scss */
+  /* line 95, ../sass/mobile.scss */
+  #landing #header .logo {
+    width: 340px;
+    margin-top: -108px;
+    margin-left: -170px;
+    position: absolute;
+    z-index: -1;
+  }
+  /* line 104, ../sass/mobile.scss */
   #landing #header h1 {
     margin: 0;
     font-weight: 300;
     font-size: 2em;
   }
-  /* line 102, ../sass/mobile.scss */
+  /* line 110, ../sass/mobile.scss */
   #landing #header h1 .jedd {
     font-weight: 500;
     color: black;
   }
-  /* line 108, ../sass/mobile.scss */
+  /* line 116, ../sass/mobile.scss */
   #landing #header h1 .ahyoung {
     font-weight: 300;
     color: white;
   }
 
-  /* line 117, ../sass/mobile.scss */
+  /* line 125, ../sass/mobile.scss */
   .video {
     position: absolute;
     top: 0;
@@ -155,19 +163,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: auto;
     opacity: 0.1;
   }
-  /* line 126, ../sass/mobile.scss */
+  /* line 134, ../sass/mobile.scss */
   .video embed {
     width: 100%;
   }
 
-  /* line 133, ../sass/mobile.scss */
+  /* line 141, ../sass/mobile.scss */
   .wrapper {
     width: 100%;
     margin: 0;
     position: relative;
   }
 
-  /* line 140, ../sass/mobile.scss */
+  /* line 148, ../sass/mobile.scss */
   #nav {
     background: white;
     height: 30px;
@@ -175,21 +183,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     position: relative;
     top: -15px;
   }
-  /* line 148, ../sass/mobile.scss */
+  /* line 156, ../sass/mobile.scss */
   #nav ul {
     background: black;
     width: 100%;
     margin: 0;
     padding: .5em 0;
   }
-  /* line 155, ../sass/mobile.scss */
+  /* line 163, ../sass/mobile.scss */
   #nav ul li {
     display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  /* line 162, ../sass/mobile.scss */
+  /* line 170, ../sass/mobile.scss */
   #nav ul li a {
     margin: 0;
     padding: .5em 2em;
@@ -201,20 +209,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: sans-serif;
     font-size: 1em;
   }
-  /* line 175, ../sass/mobile.scss */
+  /* line 183, ../sass/mobile.scss */
   #nav ul li a:hover {
     border-bottom: .2em solid white;
     padding-bottom: .3em;
   }
 
-  /* line 186, ../sass/mobile.scss */
+  /* line 194, ../sass/mobile.scss */
   #body {
     min-height: 500px;
     width: 100%;
     overflow: auto;
   }
 
-  /* line 193, ../sass/mobile.scss */
+  /* line 201, ../sass/mobile.scss */
   .chapter {
     text-align: left;
     font-family: 'Muli', 'sans-serif';
@@ -223,53 +231,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
   }
 
-  /* line 203, ../sass/mobile.scss */
+  /* line 211, ../sass/mobile.scss */
   #main h3 {
     font-family: sans-serif;
     font-variant: small-caps;
     border-bottom: 3px solid red;
   }
-  /* line 210, ../sass/mobile.scss */
+  /* line 218, ../sass/mobile.scss */
   #main h4 {
     font-family: serif;
   }
-  /* line 215, ../sass/mobile.scss */
+  /* line 223, ../sass/mobile.scss */
   #main a {
     text-decoration: none;
   }
-  /* line 219, ../sass/mobile.scss */
+  /* line 227, ../sass/mobile.scss */
   #main a:hover {
     text-decoration: underline;
     color: red;
   }
-  /* line 225, ../sass/mobile.scss */
+  /* line 233, ../sass/mobile.scss */
   #main a:visited {
     color: #336633;
   }
-  /* line 231, ../sass/mobile.scss */
+  /* line 239, ../sass/mobile.scss */
   #main dt {
     font-style: italic;
     padding: .5em 0 .5em 0;
   }
-  /* line 237, ../sass/mobile.scss */
+  /* line 245, ../sass/mobile.scss */
   #main dd.explain {
     margin: 0;
     padding-bottom: .5em;
   }
 
-  /* line 244, ../sass/mobile.scss */
+  /* line 252, ../sass/mobile.scss */
   #resume {
     background: #ebebeb;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  /* line 250, ../sass/mobile.scss */
+  /* line 258, ../sass/mobile.scss */
   #contact {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border-top: 10px solid black;
   }
-  /* line 255, ../sass/mobile.scss */
+  /* line 263, ../sass/mobile.scss */
   #contact .form-submitted {
     display: block;
     margin: 0 1em;
@@ -280,24 +288,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 0.5s;
     transition: background 0.5s;
   }
-  /* line 262, ../sass/mobile.scss */
+  /* line 270, ../sass/mobile.scss */
   #contact .form-submitted.invalid {
     background: #500;
   }
-  /* line 270, ../sass/mobile.scss */
+  /* line 278, ../sass/mobile.scss */
   #contact .form-submitted .thanks {
     font-family: 'Raleway', 'sans-serif';
     font-variant: small-caps;
   }
-  /* line 275, ../sass/mobile.scss */
+  /* line 283, ../sass/mobile.scss */
   #contact .form-submitted .thanks span {
     font-size: 1.4em;
   }
-  /* line 281, ../sass/mobile.scss */
+  /* line 289, ../sass/mobile.scss */
   #contact .contact-form {
     width: 100%;
   }
-  /* line 284, ../sass/mobile.scss */
+  /* line 292, ../sass/mobile.scss */
   #contact .contact-form label {
     display: block;
     margin: 0 1em;
@@ -308,18 +316,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 0.5s;
     transition: background 0.5s;
   }
-  /* line 291, ../sass/mobile.scss */
+  /* line 299, ../sass/mobile.scss */
   #contact .contact-form label.invalid {
     background: #500;
   }
-  /* line 295, ../sass/mobile.scss */
+  /* line 303, ../sass/mobile.scss */
   #contact .contact-form label span {
     font-family: 'Raleway', 'sans-serif';
     text-transform: uppercase;
     display: block;
     border-bottom: 1px dotted white;
   }
-  /* line 303, ../sass/mobile.scss */
+  /* line 311, ../sass/mobile.scss */
   #contact .contact-form input[type="text"], #contact .contact-form input[type="email"] {
     background: transparent;
     color: white;
@@ -332,11 +340,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 312, ../sass/mobile.scss */
+  /* line 320, ../sass/mobile.scss */
   #contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 317, ../sass/mobile.scss */
+  /* line 325, ../sass/mobile.scss */
   #contact .contact-form textarea {
     background: transparent;
     color: white;
@@ -350,15 +358,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: background 1s;
     transition: background 1s;
   }
-  /* line 327, ../sass/mobile.scss */
+  /* line 335, ../sass/mobile.scss */
   #contact .contact-form textarea:focus {
     background: rgba(255, 255, 255, 0.2);
   }
-  /* line 332, ../sass/mobile.scss */
+  /* line 340, ../sass/mobile.scss */
   #contact .contact-form .form-submit {
     margin: 0 1em 3.5em;
   }
-  /* line 335, ../sass/mobile.scss */
+  /* line 343, ../sass/mobile.scss */
   #contact .contact-form .form-submit button {
     margin: 0;
     border: 0;
@@ -375,12 +383,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 348, ../sass/mobile.scss */
+  /* line 356, ../sass/mobile.scss */
   #contact .contact-form .form-submit button:focus, #contact .contact-form .form-submit button:hover {
     background: rgba(192, 192, 192, 0.1);
   }
 
-  /* line 357, ../sass/mobile.scss */
+  /* line 365, ../sass/mobile.scss */
   #sidebar {
     background: #9999bb;
     float: right;
@@ -388,7 +396,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     min-height: 30em;
   }
 
-  /* line 365, ../sass/mobile.scss */
+  /* line 373, ../sass/mobile.scss */
   #footer {
     background: rgba(0, 0, 0, 0.3);
     color: white;
@@ -397,24 +405,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     border-top: 10px solid #ebebeb;
   }
-  /* line 375, ../sass/mobile.scss */
+  /* line 383, ../sass/mobile.scss */
   #footer .attribution {
     display: none;
   }
 
-  /* line 381, ../sass/mobile.scss */
+  /* line 389, ../sass/mobile.scss */
   .codewrapper {
     background: white;
     padding: 1em;
   }
 
-  /* line 387, ../sass/mobile.scss */
+  /* line 395, ../sass/mobile.scss */
   #about {
     background: white;
     border: 0;
   }
 
-  /* line 392, ../sass/mobile.scss */
+  /* line 400, ../sass/mobile.scss */
   .moneyshot {
     display: none;
     width: 100%;
@@ -423,18 +431,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: -400px;
   }
 
-  /* line 401, ../sass/mobile.scss */
+  /* line 409, ../sass/mobile.scss */
   .column {
     display: inline-block;
     vertical-align: top;
     margin: 0;
   }
-  /* line 407, ../sass/mobile.scss */
+  /* line 415, ../sass/mobile.scss */
   .column p {
     margin: 1em;
   }
 
-  /* line 413, ../sass/mobile.scss */
+  /* line 421, ../sass/mobile.scss */
   .caption {
     padding: .5em .5em .5em .5em;
     font-size: 2.2em;
@@ -444,12 +452,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
-  /* line 425, ../sass/mobile.scss */
+  /* line 433, ../sass/mobile.scss */
   .caption span {
     display: block;
   }
 
-  /* line 432, ../sass/mobile.scss */
+  /* line 440, ../sass/mobile.scss */
   a.icon {
     display: inline-block;
     font-size: 80px;
@@ -457,18 +465,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
     padding: 2px;
   }
-  /* line 440, ../sass/mobile.scss */
+  /* line 448, ../sass/mobile.scss */
   a.icon:before {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
   }
-  /* line 445, ../sass/mobile.scss */
+  /* line 453, ../sass/mobile.scss */
   a.icon:hover {
     color: white;
   }
-  /* line 450, ../sass/mobile.scss */
+  /* line 458, ../sass/mobile.scss */
   a.icon:hover:before {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -477,51 +485,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: white;
   }
 
-  /* line 457, ../sass/mobile.scss */
+  /* line 465, ../sass/mobile.scss */
   .overflow-container {
     overflow: hidden;
   }
 
-  /* line 462, ../sass/mobile.scss */
+  /* line 470, ../sass/mobile.scss */
   .height-480 {
     max-height: 480px;
   }
 
-  /* line 467, ../sass/mobile.scss */
+  /* line 475, ../sass/mobile.scss */
   .height-360 {
     max-height: 360px;
   }
 
-  /* line 472, ../sass/mobile.scss */
+  /* line 480, ../sass/mobile.scss */
   .height-320 {
     max-height: 320px;
   }
 
-  /* line 477, ../sass/mobile.scss */
+  /* line 485, ../sass/mobile.scss */
   .height-240 {
     max-height: 240px;
   }
 
-  /* line 482, ../sass/mobile.scss */
+  /* line 490, ../sass/mobile.scss */
   .height-160 {
     max-height: 160px;
   }
 
-  /* line 486, ../sass/mobile.scss */
+  /* line 494, ../sass/mobile.scss */
   .resume-page {
     height: 400px;
   }
-  /* line 490, ../sass/mobile.scss */
+  /* line 498, ../sass/mobile.scss */
   .resume-page a {
     display: block;
     position: relative;
   }
-  /* line 494, ../sass/mobile.scss */
+  /* line 502, ../sass/mobile.scss */
   .resume-page a img {
     width: 100%;
     height: auto;
   }
-  /* line 499, ../sass/mobile.scss */
+  /* line 507, ../sass/mobile.scss */
   .resume-page a:after {
     content: "";
     display: block;
@@ -533,7 +541,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: transparent url("../images/pdf.png") no-repeat 40% 20%;
   }
 
-  /* line 512, ../sass/mobile.scss */
+  /* line 520, ../sass/mobile.scss */
   .completely-hidden {
     display: none !important;
   }
