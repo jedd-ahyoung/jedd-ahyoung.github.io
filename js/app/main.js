@@ -36,7 +36,7 @@
 	};
 
 	var submitted = false;
-	var endpoint = '/contact.php';
+	var endpoint = '//formspree.io/jedd.ahyoung@gmail.com';
 
 	var validateAndSend = function (form) {
 		var name = form['form-name'].value;
@@ -50,13 +50,18 @@
 			isMessageValid(message, form['form-message'].parentNode)))
 		{
 			var params = {
-				type: 'POST',
+				method: 'POST',
 				url: endpoint,
 				data: {
 					name: name,
-					email: email,
-					antispam: antispam,
+					_replyto: email,
+					_gotcha: antispam,
 					message: message
+				},
+				datatype: 'json',
+				// contentType: 'application/json; charset=UTF-8',
+				headers: {          
+					Accept : "application/json; charset=utf-8",         
 				}
 			};
 			// if valid, send the message.
@@ -65,25 +70,20 @@
 			$.ajax(params)
 				.done(function (data) {
 					// Reset form fields.
-					if (data.success) {
-						form['form-name'].value = null;
-						form['form-email'].value = null;
-						form['form-message'].value = null;
-						form['form-antispam'].value = null;
+					console.log("DATA:", data);
+					form['form-name'].value = null;
+					form['form-email'].value = null;
+					form['form-message'].value = null;
+					form['form-antispam'].value = null;
 
-						// Display confirmation message.
-						$(form).addClass('completely-hidden');
-						$('#form-error').addClass('completely-hidden');
+					// Display confirmation message.
+					$(form).addClass('completely-hidden');
+					$('#form-error').addClass('completely-hidden');
 
-						// Populate success message.
-						var submitted = $('#form-submitted');
-						$('strong[data-attr="name"]', submitted).text(name);
-						submitted.removeClass('completely-hidden');
-					} else {
-						// Show a message about the message not being sent, and attempt to store message to localstorage.
-						$('#form-error').removeClass('completely-hidden');
-						$('button[type="submit"]', form).prop('disabled', false);
-					}
+					// Populate success message.
+					var submitted = $('#form-submitted');
+					$('strong[data-attr="name"]', submitted).text(name);
+					submitted.removeClass('completely-hidden');
 				})
 				.fail(function (data) {
 					$('#form-error').removeClass('completely-hidden');
