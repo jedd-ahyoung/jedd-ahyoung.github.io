@@ -90,19 +90,19 @@
 						<form aria-hidden="false" class="contact-form" method="post" action="#" onsubmit="validateAndSend(this); return false;">
 							<label for="form-name">
 								<span>Name</span>
-								<input aria-required="true" aria-invalid="false" id="form-name" type="text" placeholder="John Doe" />
+								<input aria-required="true" aria-invalid="false" id="form-name" name="form-name" type="text" placeholder="John Doe" />
 							</label>
 							<label for="form-email">
 								<span>Email</span>
-								<input aria-required="true" aria-invalid="false" id="form-email" type="email" placeholder="john.doe@email.com" />
+								<input aria-required="true" aria-invalid="false" id="form-email" name="form-email" type="email" placeholder="john.doe@email.com" />
 							</label>
 							<label for="form-message">
 								<span>Message</span>
-								<textarea aria-required="true" aria-invalid="false" id="form-message" placeholder="Hi! I'm John Doe, and I wanted to contact you because..."></textarea>
+								<textarea aria-required="true" aria-invalid="false" id="form-message" name="form-message" placeholder="Hi! I'm John Doe, and I wanted to contact you because..."></textarea>
 							</label>
 							<label aria-hidden="true" for="form-antispam" class="completely-hidden">
 								<span>Anti-Spam</span>
-								<input id="form-antispam" type="text" placeholder="Leave this field blank!" />
+								<input id="form-antispam" name="form-antispam" type="text" placeholder="Leave this field blank!" />
 							</label>
 							<div class="form-submit">
 								<button id="submit" type="submit">
@@ -129,7 +129,6 @@
 		</footer>
 	</div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/app/main.js"></script>
 </body>
 </html>

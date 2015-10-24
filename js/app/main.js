@@ -49,55 +49,61 @@
 		var email = form['form-email'].value;
 		var message = form['form-message'].value;
 		var antispam = form['form-antispam'].value;
+		var request = new XMLHttpRequest();
+		var data = {
+			name: name,
+			_replyto: email,
+			_gotcha: antispam,
+			message: message
+		};
+
+		var formData = Object.keys(data)
+			.map(function (key) {
+				return encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+			})
+			.join('&')
+			.replace(/%20/g, '+');
 
 		// Validate all values.
 		if (!!(isNameValid(name, form['form-name'].parentNode, form['form-name']) &
 			isEmailValid(email, form['form-email'].parentNode, form['form-email']) &
 			isMessageValid(message, form['form-message'].parentNode, form['form-message'])))
 		{
-			var params = {
-				method: 'POST',
-				url: endpoint,
-				data: {
-					name: name,
-					_replyto: email,
-					_gotcha: antispam,
-					message: message
-				},
-				datatype: 'json',
-				headers: {
-					Accept : "application/json; charset=utf-8",
-				}
-			};
-			// if valid, send the message.
 			document.getElementById('submit').setAttribute('disabled', true);
 
-			$.ajax(params)
-				.done(function (data) {
-					var formerror = document.getElementById('form-error');
-					// Reset form fields.
-					form['form-name'].value = null;
-					form['form-email'].value = null;
-					form['form-message'].value = null;
-					form['form-antispam'].value = null;
+			// if valid, send the message.
+			request.open('POST', endpoint, true);
+			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+			request.setRequestHeader('Accept', 'application/json; charset=utf-8');
 
-					// Display confirmation message.
-					form.classList.add('completely-hidden');
-					form.setAttribute('aria-hidden', true);
-					formerror.classList.add('completely-hidden');
-					formerror.setAttribute('aria-hidden', true);
+			request.onload = function (data) {
+				var formerror = document.getElementById('form-error');
+				// Reset form fields.
+				form['form-name'].value = null;
+				form['form-email'].value = null;
+				form['form-message'].value = null;
+				form['form-antispam'].value = null;
 
-					// Populate success message.
-					var submitted = document.getElementById('form-submitted');
-					document.querySelector('strong[data-attr="name"]').textContent = name;
-					submitted.classList.remove('completely-hidden');
-				})
-				.fail(function (data) {
-					var formerror = document.getElementById('form-error');
-					formerror.classList.remove('completely-hidden');
-					formerror.setAttribute('aria-hidden', false);
-					document.getElementById('submit').setAttribute('disabled', false);
-				});
+				// Display confirmation message.
+				form.classList.add('completely-hidden');
+				form.setAttribute('aria-hidden', true);
+				formerror.classList.add('completely-hidden');
+				formerror.setAttribute('aria-hidden', true);
+
+				// Populate success message.
+				var submitted = document.getElementById('form-submitted');
+				document.querySelector('strong[data-attr="name"]').textContent = name;
+				submitted.classList.remove('completely-hidden');
+			};
+
+			request.onerror = function (data) {
+				var formerror = document.getElementById('form-error');
+				formerror.classList.remove('completely-hidden');
+				formerror.setAttribute('aria-hidden', false);
+				document.getElementById('submit').setAttribute('disabled', false);
+			};
+
+			request.send(formData);
 		}
 	};
 
