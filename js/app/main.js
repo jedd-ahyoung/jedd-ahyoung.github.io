@@ -1,35 +1,41 @@
 (function () {
-	function isNameValid (value, node) {
+	function isNameValid (value, node, input) {
 		var valid = value && (typeof(value) === 'string');
 
 		if (!valid) {
 			node.classList.add('invalid');
+			input.setAttribute('aria-invalid', true);
 		} else {
 			node.classList.remove('invalid');
+			input.setAttribute('aria-invalid', false);
 		}
 
 		return valid;
 	};
 
-	function isEmailValid (value, node) {
+	function isEmailValid (value, node, input) {
 		var valid = (value && typeof(value) === 'string');
 		// Probably should use regex here as well, or at least modernizer.
 		if (!valid) {
 			node.classList.add('invalid');
+			input.setAttribute('aria-invalid', true);
 		} else {
 			node.classList.remove('invalid');
+			input.setAttribute('aria-invalid', false);
 		}
 
 		return valid;
 	};
 
-	function isMessageValid (value, node) {
+	function isMessageValid (value, node, input) {
 		var valid = (value && typeof(value) === 'string');
 		// Might be worth it to check length of message.
 		if (!valid) {
 			node.classList.add('invalid');
+			input.setAttribute('aria-invalid', true);
 		} else {
 			node.classList.remove('invalid');
+			input.setAttribute('aria-invalid', false);
 		}
 
 		return valid;
@@ -45,9 +51,9 @@
 		var antispam = form['form-antispam'].value;
 
 		// Validate all values.
-		if (!!(isNameValid(name, form['form-name'].parentNode) &
-			isEmailValid(email, form['form-email'].parentNode) &
-			isMessageValid(message, form['form-message'].parentNode)))
+		if (!!(isNameValid(name, form['form-name'].parentNode, form['form-name']) &
+			isEmailValid(email, form['form-email'].parentNode, form['form-email']) &
+			isMessageValid(message, form['form-message'].parentNode, form['form-message'])))
 		{
 			var params = {
 				method: 'POST',
@@ -60,8 +66,8 @@
 				},
 				datatype: 'json',
 				// contentType: 'application/json; charset=UTF-8',
-				headers: {          
-					Accept : "application/json; charset=utf-8",         
+				headers: {
+					Accept : "application/json; charset=utf-8",
 				}
 			};
 			// if valid, send the message.
