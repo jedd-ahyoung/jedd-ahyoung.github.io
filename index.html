@@ -28,7 +28,7 @@
 
 </head>
 <body itemscope itemtype="http://schema.org/Person">
-	<div id="landing">
+	<div role="banner" id="landing">
 		<div class="wrapper">
 			<header id="header">
 				<h1>
@@ -46,7 +46,7 @@
 				&nbsp;
 			</div>
 			<div id="body">
-				<section class="chapter" id="about" itemprop="description">
+				<section role="main" class="chapter" id="about" itemprop="description">
 					<div class="column on-2">
 						<p>Coming from a musical family, inspiration has always been around me. I grew up around music and culture, and I developed an early love for art (by sitting in front of the TV, drawing my favorite cartoon characters).</p>
 						<p>My first computer opened a new world to me - after I broke it numerous times, I learned to exercise my creativity with new digital mediums. Armed with Notepad, Paint Shop Pro, and Internet Explorer 4, I began designing for the web. Eventually, I learned the ins and outs of computing, and pursued a career in it.</p>
@@ -67,11 +67,11 @@
 						</div>
 					</div>
 				</section>
-				<section class="chapter lastchapter" id="contact">
+				<section role="complementary" class="chapter lastchapter" id="contact">
 					<div class="column on-2 height-360">
 						<p>I build applications for the Web using HTML5, CSS, and Javascript frameworks like AngularJS; I also build mobile applications using Phonegap. If you have an idea that you'd like to see come to life, or you need a developer for a project, feel free to get in touch!</p>
-					</div><div class="column on-2">
-						<div id="form-submitted" class="form-submitted bottom-radius completely-hidden">
+					</div><div aria-live="polite" aria-atomic="false" class="column on-2">
+						<div aria-hidden="true" id="form-submitted" class="form-submitted bottom-radius completely-hidden">
 							<div class="thanks">
 								<span>
 									<strong data-attr="name"></strong>, thanks for reaching out!
@@ -79,7 +79,7 @@
 							</div>
 							<p>Your message has been sent, and a confirmation email has been sent to the email address you provided.</p>
 						</div>
-						<div id="form-error" class="form-submitted invalid completely-hidden">
+						<div aria-hidden="true" id="form-error" class="form-submitted invalid completely-hidden">
 							<div class="thanks">
 								<span>
 									Something's not right....
@@ -87,20 +87,20 @@
 							</div>
 							<p>There was an error sending your message.</p>
 						</div>
-						<form class="contact-form" method="post" action="#" onsubmit="validateAndSend(this); return false;">
+						<form aria-hidden="false" class="contact-form" method="post" action="#" onsubmit="validateAndSend(this); return false;">
 							<label for="form-name">
 								<span>Name</span>
-								<input id="form-name" type="text" placeholder="John Doe" />
+								<input aria-required="true" aria-invalid="false" id="form-name" type="text" placeholder="John Doe" />
 							</label>
 							<label for="form-email">
 								<span>Email</span>
-								<input id="form-email" type="email" placeholder="john.doe@email.com" />
+								<input aria-required="true" aria-invalid="false" id="form-email" type="email" placeholder="john.doe@email.com" />
 							</label>
 							<label for="form-message">
 								<span>Message</span>
-								<textarea id="form-message" placeholder="Hi! I'm John Doe, and I wanted to contact you because..."></textarea>
+								<textarea aria-required="true" aria-invalid="false" id="form-message" placeholder="Hi! I'm John Doe, and I wanted to contact you because..."></textarea>
 							</label>
-							<label for="form-antispam" class="completely-hidden">
+							<label aria-hidden="true" for="form-antispam" class="completely-hidden">
 								<span>Anti-Spam</span>
 								<input id="form-antispam" type="text" placeholder="Leave this field blank!" />
 							</label>
@@ -114,7 +114,7 @@
 				</section>
 			</div>
 		</div>
-		<footer id="footer">
+		<footer role="contentinfo" id="footer">
 			<div class="wrapper">
 				<div class="column on-3 height-160">
 				</div><div class="column on-3 height-160">
