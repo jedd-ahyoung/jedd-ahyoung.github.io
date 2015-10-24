@@ -65,35 +65,38 @@
 					message: message
 				},
 				datatype: 'json',
-				// contentType: 'application/json; charset=UTF-8',
 				headers: {
 					Accept : "application/json; charset=utf-8",
 				}
 			};
 			// if valid, send the message.
-			$('button[type="submit"]', form).prop('disabled', true);
+			document.getElementById('submit').setAttribute('disabled', true);
 
 			$.ajax(params)
 				.done(function (data) {
+					var formerror = document.getElementById('form-error');
 					// Reset form fields.
-					console.log("DATA:", data);
 					form['form-name'].value = null;
 					form['form-email'].value = null;
 					form['form-message'].value = null;
 					form['form-antispam'].value = null;
 
 					// Display confirmation message.
-					$(form).addClass('completely-hidden');
-					$('#form-error').addClass('completely-hidden');
+					form.classList.add('completely-hidden');
+					form.setAttribute('aria-hidden', true);
+					formerror.classList.add('completely-hidden');
+					formerror.setAttribute('aria-hidden', true);
 
 					// Populate success message.
-					var submitted = $('#form-submitted');
-					$('strong[data-attr="name"]', submitted).text(name);
-					submitted.removeClass('completely-hidden');
+					var submitted = document.getElementById('form-submitted');
+					document.querySelector('strong[data-attr="name"]').textContent = name;
+					submitted.classList.remove('completely-hidden');
 				})
 				.fail(function (data) {
-					$('#form-error').removeClass('completely-hidden');
-					$('button[type="submit"]', form).prop('disabled', false);
+					var formerror = document.getElementById('form-error');
+					formerror.classList.remove('completely-hidden');
+					formerror.setAttribute('aria-hidden', false);
+					document.getElementById('submit').setAttribute('disabled', false);
 				});
 		}
 	};
