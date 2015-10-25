@@ -188,7 +188,7 @@ $phonewidth: 640;
 					font-family: sans-serif;
 					font-size: 1em;
 
-					&:hover
+					&:focus, &:hover
 					{
 						border-bottom: .2em solid white;
 						padding-bottom: .3em;
@@ -232,7 +232,7 @@ $phonewidth: 640;
 		{
 			text-decoration: none;
 
-			&:hover
+			&:focus, &:hover
 			{
 				text-decoration: underline;
 				color: red;
@@ -457,12 +457,12 @@ $phonewidth: 640;
 			@include single-transition(all, 1s);
 		}
 
-		&:hover
+		&:focus, &:hover
 		{
 			color: rgba(255, 255, 255, 1);
 		}
 
-		&:hover:before
+		&:focus:before, &:hover:before
 		{
 			@include single-transition(all, .5s);
 			color: rgba(255, 255, 255, 1);
@@ -513,7 +513,7 @@ $phonewidth: 640;
 
 			@include single-transition(.5s, all, ease, 0s);
 
-			&:hover {
+			&:focus, &:hover {
 				@include simple-transform(1.05, 5deg);
 			}
 
@@ -531,7 +531,7 @@ $phonewidth: 640;
 				opacity: 0;
 			}
 
-			&:hover:after {
+			&:focus:after, &:hover:after {
 				background: rgba(255, 255, 255, 0.6) url("../images/pdf_logo.svg") no-repeat 50% 25%;
 				border: 2px solid #d00;
 				opacity: 0.9;

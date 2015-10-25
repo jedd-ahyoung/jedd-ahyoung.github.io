@@ -179,7 +179,7 @@ $phonewidth: 640;
 					font-family: sans-serif;
 					font-size: 1em;
 
-					&:hover
+					&:focus, &:hover
 					{
 						border-bottom: .2em solid white;
 						padding-bottom: .3em;
@@ -223,7 +223,7 @@ $phonewidth: 640;
 		{
 			text-decoration: none;
 
-			&:hover
+			&:focus, &:hover
 			{
 				text-decoration: underline;
 				color: red;
@@ -449,12 +449,12 @@ $phonewidth: 640;
 			@include single-transition(all, 1s);
 		}
 
-		&:hover
+		&:focus, &:hover
 		{
 			color: rgba(255, 255, 255, 1);
 		}
 
-		&:hover:before
+		&:focus:before, &:hover:before
 		{
 			@include single-transition(all, .5s);
 			color: rgba(255, 255, 255, 1);
