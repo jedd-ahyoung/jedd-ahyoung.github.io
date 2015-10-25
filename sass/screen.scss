@@ -511,14 +511,14 @@ $phonewidth: 640;
 			display: inline-block;
 			margin: 40px 40px;
 
-			@include single-transition(.2s all);
+			@include single-transition(.5s, all, ease, 0s);
 
 			&:hover {
 				@include simple-transform(1.05, 5deg);
 			}
 
 			&:after {
-				@include single-transition(.2s all);
+				@include single-transition(.5s, all, ease, 0s);
 				content: "";
 				display: block;
 				position: absolute;
@@ -526,15 +526,15 @@ $phonewidth: 640;
 				left: 0;
 				bottom: 0;
 				right: 0;
-				background: url("../images/pdf.png") no-repeat 40% 20%;
+				background: url("../images/pdf_logo.svg") no-repeat 50% 30%;
 				border: 2px solid #ebebeb;
 				opacity: 0;
 			}
 
 			&:hover:after {
-				background: rgba(255, 255, 255, 0.8) url("../images/pdf.png") no-repeat 37% 20%;
+				background: rgba(255, 255, 255, 0.6) url("../images/pdf_logo.svg") no-repeat 50% 25%;
 				border: 2px solid #d00;
-				opacity: 1;
+				opacity: 0.9;
 			}
 		}
 
