@@ -28,7 +28,7 @@
 
 </head>
 <body itemscope itemtype="http://schema.org/Person">
-	<div role="banner" id="landing">
+	<div id="landing">
 		<div class="wrapper">
 			<header id="header">
 				<h1>
@@ -52,25 +52,25 @@
 						<p>My first computer opened a new world to me - after I broke it numerous times, I learned to exercise my creativity with new digital mediums. Armed with Notepad, Paint Shop Pro, and Internet Explorer 4, I began designing for the web. Eventually, I learned the ins and outs of computing, and pursued a career in it.</p>
 						<p>Today, I'm an autonomous individual who loves thinking about the possibilities that new technologies enable. Spending four years in an IT career has allowed me to broaden my horizons, cultivate new ideas, and discover new ways to implement them.</p>
 					</div><div class="column on-2 height-480">
-						<img class="moneyshot" itemprop="image" src="images/moneyshot.jpg" />
+						<img role="presentation" class="moneyshot" itemprop="image" src="images/moneyshot.jpg" />
 					</div>
 				</section>
-				<section class="chapter" id="resume">
-					<aside class="column on-2 caption">
+				<section aria-label="View My Resume" role="complementary" class="chapter" id="resume">
+					<div class="column on-2 caption">
 						<span>&nbsp;I take pride in my personal work and I love nothing more than doing things right.</span>
-					</aside><div class="column on-2">
+					</div><div class="column on-2">
 						<div class="resume-page overflow-container">
-							<a href="https://docs.google.com/document/d/1ciDqbdmYxMq7YjaPLETBcg9UCzYQaYpmndJtDiN_pK4/export?format=pdf" title="View My Resume">
+							<a href="https://docs.google.com/document/d/1ciDqbdmYxMq7YjaPLETBcg9UCzYQaYpmndJtDiN_pK4/export?format=pdf" aria-label="View My Resume">
 								<!-- <img src="images/resume-image.png" /> -->
 								<img src="https://lh3.google.com/Dfqq3blLvYR0PQqr9wK3zAs7ape932a-FM6w0WswpfFw5NySIbGjwfskAj1Q6i4vRe4wxju3CTbYACWZ704OiB_YSh-rl-6G=w416" />
 							</a>
 						</div>
 					</div>
 				</section>
-				<section role="complementary" class="chapter lastchapter" id="contact">
+				<section aria-label="Get In Touch" role="complementary" class="chapter lastchapter" id="contact">
 					<div class="column on-2 height-360">
 						<p>I build applications for the Web using HTML5, CSS, and Javascript frameworks like AngularJS; I also build mobile applications using Phonegap. If you have an idea that you'd like to see come to life, or you need a developer for a project, feel free to get in touch!</p>
-					</div><div aria-live="polite" aria-atomic="false" class="column on-2">
+					</div><div role="form" aria-label="Contact Me" aria-live="polite" aria-atomic="false" class="column on-2">
 						<div aria-hidden="true" id="form-submitted" class="form-submitted bottom-radius completely-hidden">
 							<div class="thanks">
 								<span>
@@ -118,11 +118,11 @@
 			<div class="wrapper">
 				<div class="column on-3 height-160">
 				</div><div class="column on-3 height-160">
-					<a class="icon icon-mail" itemprop="email" href="mailto:jedd.ahyoung@gmail.com" title="Send me email"></a>
-					<a class="icon icon-stackoverflow" itemprop="url" href="http://stackoverflow.com/users/677526/jedd-ahyoung" title="View my StackOverflow contributions"></a>
-					<a class="icon icon-linkedin" itemprop="url" href="http://www.linkedin.com/in/jeddahyoung" title="Find me on LinkedIn"></a>
-					<a class="icon icon-github" itemprop="url" href="https://github.com/jedd-ahyoung" title="Find me on Github"></a>
-					<p class="attribution">This site and all images are copyright &copy; Jedd Ahyoung, 2012.</p>
+					<a class="icon icon-mail" itemprop="email" href="mailto:jedd.ahyoung@gmail.com" aria-label="Send me email"></a>
+					<a class="icon icon-stackoverflow" itemprop="url" href="http://stackoverflow.com/users/677526/jedd-ahyoung" aria-label="View my StackOverflow contributions"></a>
+					<a class="icon icon-linkedin" itemprop="url" href="http://www.linkedin.com/in/jeddahyoung" aria-label="Find me on LinkedIn"></a>
+					<a class="icon icon-github" itemprop="url" href="https://github.com/jedd-ahyoung" aria-label="Find me on Github"></a>
+					<p class="attribution">This site and all images are copyright <span aria-hidden="true">&copy;</span> Jedd Ahyoung, 2012.</p>
 				</div><div class="column on-3 height-160">
 				</div>
 			</div>
