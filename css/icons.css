@@ -23,6 +23,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter-with-circle:before {
+    content: "\e900";
+}
+
 .icon-mail:before {
 	content: "\e600";
 }

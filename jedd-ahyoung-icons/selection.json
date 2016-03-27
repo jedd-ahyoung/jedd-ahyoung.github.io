@@ -4,24 +4,51 @@
 		{
 			"icon": {
 				"paths": [
+					"M512 20.48c-271.462 0-491.52 220.058-491.52 491.52s220.058 491.52 491.52 491.52 491.52-220.058 491.52-491.52-220.058-491.52-491.52-491.52zM711.936 423.117c0.205 4.198 0.256 8.397 0.256 12.493 0 128-97.331 275.507-275.405 275.507-54.682 0-105.574-15.974-148.378-43.52 7.526 0.922 15.258 1.28 23.091 1.28 45.363 0 87.091-15.411 120.218-41.421-42.342-0.819-78.080-28.774-90.419-67.174 5.888 1.075 11.93 1.69 18.176 1.69 8.806 0 17.408-1.178 25.498-3.379-44.288-8.909-77.67-48.026-77.67-94.925v-1.178c13.056 7.219 28.006 11.622 43.878 12.134-26.010-17.408-43.059-47.002-43.059-80.64 0-17.715 4.762-34.406 13.107-48.691 47.77 58.573 119.040 97.075 199.526 101.222-1.69-7.117-2.509-14.49-2.509-22.118 0-53.402 43.315-96.819 96.819-96.819 27.802 0 52.992 11.776 70.656 30.618 22.067-4.403 42.752-12.39 61.44-23.501-7.219 22.579-22.528 41.574-42.547 53.606 19.61-2.406 38.246-7.578 55.603-15.309-12.954 19.405-29.389 36.506-48.282 50.125z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"twitter-with-circle"
+				],
+				"grid": 20
+			},
+			"attrs": [],
+			"properties": {
+				"order": 21,
+				"id": 435,
+				"prevSize": 32,
+				"code": 59648,
+				"name": "twitter-with-circle"
+			},
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
 					"M852 0h-680c-94.6 0-172 77.4-172 172v680c0 94.6 77.4 172 172 172h680c94.6 0 172-77.4 172-172v-680c0-94.6-77.4-172-172-172zM384 832h-128v-448h128v448zM320 320c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM832 832h-128v-256c0-35.346-28.654-64-64-64s-64 28.654-64 64v256h-128v-448h128v79.472c26.398-36.264 66.752-79.472 112-79.472 79.53 0 144 71.634 144 160v288z"
 				],
 				"tags": [
 					"linkedin",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"attrs": []
 			},
+			"attrs": [],
 			"properties": {
 				"id": 415,
-				"order": 1,
+				"order": 22,
 				"prevSize": 32,
 				"code": 58882,
 				"name": "linkedin",
 				"ligatures": ""
 			},
-			"setIdx": 0,
-			"iconIdx": 415
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 1
 		},
 		{
 			"icon": {
@@ -32,18 +59,21 @@
 					"stackoverflow",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"attrs": []
 			},
+			"attrs": [],
 			"properties": {
 				"id": 421,
-				"order": 2,
+				"order": 23,
 				"prevSize": 32,
 				"code": 58883,
 				"name": "stackoverflow",
 				"ligatures": ""
 			},
-			"setIdx": 0,
-			"iconIdx": 421
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -55,18 +85,21 @@
 					"octacat",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"attrs": []
 			},
+			"attrs": [],
 			"properties": {
 				"id": 394,
-				"order": 3,
+				"order": 26,
 				"prevSize": 32,
 				"code": 58881,
 				"name": "github",
 				"ligatures": ""
 			},
-			"setIdx": 0,
-			"iconIdx": 394
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 3
 		},
 		{
 			"icon": {
@@ -79,18 +112,21 @@
 					"format",
 					"pdf"
 				],
-				"grid": 16
+				"grid": 16,
+				"attrs": []
 			},
+			"attrs": [],
 			"properties": {
 				"id": 434,
-				"order": 4,
+				"order": 24,
 				"prevSize": 32,
 				"code": 58884,
 				"name": "file-pdf",
 				"ligatures": ""
 			},
-			"setIdx": 0,
-			"iconIdx": 434
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -107,18 +143,21 @@
 					"envelope",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"attrs": []
 			},
+			"attrs": [],
 			"properties": {
 				"id": 354,
-				"order": 5,
+				"order": 25,
 				"prevSize": 32,
 				"code": 58880,
 				"name": "mail",
 				"ligatures": ""
 			},
-			"setIdx": 0,
-			"iconIdx": 354
+			"setIdx": 2,
+			"setId": 1,
+			"iconIdx": 5
 		}
 	],
 	"height": 1024,
@@ -144,7 +183,8 @@
 			"showMetrics": true,
 			"showMetadata": true,
 			"showVersion": true,
-			"autoHost": true
+			"autoHost": false,
+			"embed": false
 		},
 		"imagePref": {},
 		"historySize": 100,
@@ -152,7 +192,9 @@
 		"search": "",
 		"showLiga": false,
 		"quickUsageToken": {
-			"UntitledProject2": "NTgwNjUwZjhlMWYwN2I1ZDA5OWVhYmViZjI5N2IxNDUjMiMxMzk4NjE2MzQ0IyMj"
-		}
+			"UntitledProject1": "OGI1NmJiMzYxMTJlOTZlNTk4Njg3NDNkYmRkOTZjNjIjMSMxNDU5MDQ1ODE2IyMj"
+		},
+		"showQuickUse2": true,
+		"showSVGs": true
 	}
 }
