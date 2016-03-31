@@ -104,8 +104,50 @@
 			};
 
 			request.send(formData);
+			return;
 		}
+
+		snabbt(document.getElementById('contact-form'), 'attention', {
+			position: [50, 0, 0],
+			springConstant: 2.4,
+			springDeceleration: 0.9,
+		});
 	};
 
 	window.validateAndSend = validateAndSend;
+
+	document.addEventListener("DOMContentLoaded", function (event) {
+		snabbt(document.querySelectorAll('.logo'), {
+			fromOpacity: 0,
+			opacity: .7,
+			duration: 2000
+		});
+
+		snabbt(document.querySelectorAll('.jedd'), {
+			fromPosition: [0, 0, 0],
+			position: [0, 0, 0],
+			fromOpacity: 0,
+			opacity: 1,
+			duration: 1000,
+			easing: 'easeOut'
+		});
+
+		snabbt(document.querySelectorAll('.ahyoung'), {
+			fromPosition: [70, 0, 0],
+			position: [0, 0, 0],
+			fromOpacity: 0,
+			opacity: 1,
+			duration: 1000,
+			easing: 'easeOut'
+		});
+
+		snabbt(document.getElementById('content-wrapper'), {
+			fromPosition: [0, 50, 0],
+			position: [0, 0, 0],
+			fromOpacity: 0,
+			opacity: 1,
+			duration: 1000,
+			easing: 'easeOut'
+		});
+	});
 })();
