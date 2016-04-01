@@ -375,6 +375,7 @@ $phonewidth: 640;
 
 	.lastchapter {
 		@include border-bottom-radius(30px);
+		overflow-x: hidden;
 	}
 
 	#sidebar

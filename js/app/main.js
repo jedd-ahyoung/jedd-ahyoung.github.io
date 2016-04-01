@@ -44,7 +44,10 @@
 	var submitted = false;
 	var endpoint = '//formspree.io/jedd.ahyoung@gmail.com';
 
-	var validateAndSend = function (form) {
+	var validateAndSend = function (event) {
+		event.preventDefault();
+		var form = event.target;
+
 		var name = form['form-name'].value;
 		var email = form['form-email'].value;
 		var message = form['form-message'].value;
@@ -114,17 +117,16 @@
 		});
 	};
 
-	window.validateAndSend = validateAndSend;
-
 	document.addEventListener("DOMContentLoaded", function (event) {
+		document.getElementById('form-contact-form').addEventListener('submit', validateAndSend);
 		snabbt(document.querySelectorAll('.logo'), {
 			fromOpacity: 0,
 			opacity: .7,
-			duration: 2000
+			duration: 2500
 		});
 
 		snabbt(document.querySelectorAll('.jedd'), {
-			fromPosition: [0, 0, 0],
+			fromPosition: [-40, 0, 0],
 			position: [0, 0, 0],
 			fromOpacity: 0,
 			opacity: 1,
