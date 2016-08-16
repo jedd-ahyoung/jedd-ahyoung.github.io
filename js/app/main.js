@@ -1,6 +1,6 @@
 (function () {
 	function isNameValid (value, node, input) {
-		var valid = value && (typeof(value) === 'string');
+		var valid = value && (typeof(value) === 'string') && String.prototype.trim(value);
 
 		if (!valid) {
 			node.classList.add('invalid');
@@ -28,7 +28,7 @@
 	};
 
 	function isMessageValid (value, node, input) {
-		var valid = (value && typeof(value) === 'string');
+		var valid = (value && typeof(value) === 'string') && String.prototype.trim(value);
 		// Might be worth it to check length of message.
 		if (!valid) {
 			node.classList.add('invalid');
