@@ -459,6 +459,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 0;
   }
 
+  /* line 411, ../sass/screen.scss */
+  .moneyshot {
+    height: 100%;
+  }
+
   /* line 415, ../sass/screen.scss */
   .column {
     display: inline-block;
